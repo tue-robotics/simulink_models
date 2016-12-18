@@ -1,7 +1,7 @@
 %% Startup file for setting up matlab workspace
 
 % Current path
-cd ..
+cd ../..
 pathstring = pwd;
 cd simulink_models;
 
