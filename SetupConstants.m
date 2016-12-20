@@ -22,6 +22,8 @@ Constants.mdl.CPT_m5 = 500;
 Constants.mdl.CPT_m6 = 512;
 Constants.mdl.CPT_m7 = 512;
 
+Constants.mdl.TUeES030.EncoderCounterSize = 2^32; % Navragen of dit echt een 32bit counter is 
+
 %% Gearbox Ratio's    maxon * custom gearbox ratio
 Constants.mdl.GR_m1 = (204687/2057)*(60/20);
 Constants.mdl.GR_m2 = (204687/2057)*(60/20);
@@ -30,6 +32,15 @@ Constants.mdl.GR_m4 = (3249/121)*(60/1);
 Constants.mdl.GR_m5 = (3249/121)*(60/1);
 Constants.mdl.GR_m6 = (15/4);
 Constants.mdl.GR_m7 = (15/4);
+
+%% Maxon Motor Current Limits
+Constants.mdl.MotorCurrentLimit_m1 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m2 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m3 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m4 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m5 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m6 = 1.0; % [A]
+Constants.mdl.MotorCurrentLimit_m7 = 1.0; % [A]
 
 %% Controller Parameters
 Constants.mdl.control.Kc 		= [2000, 	2000, 	500, 	80, 	800,	0.0,	0.0];
