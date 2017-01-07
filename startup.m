@@ -7,11 +7,10 @@ if(ispc) % if Windows
     pathstring = pwd;
     cd simulink_models;
 
-    % Adding simulink models folder
+    % Adding folders to matlab path
     addpath(genpath(strcat(pathstring,'\simulink_models')))
-
-    % Adding tue simulink ethercat folder
     addpath(genpath(strcat(pathstring,'\tue_simulink_ethercat')))
+    addpath(genpath(strcat(pathstring,'\soem')))
     
 else % else Linux (Make symlink to /home/username/startup.m)
     
@@ -20,12 +19,10 @@ else % else Linux (Make symlink to /home/username/startup.m)
     pathstring = pwd;
     cd simulink_models.git/;
 
-    % Adding simulink models folder
+    % Adding folders to matlab path
     addpath(genpath(strcat(pathstring,'/simulink_models.git/')))
-
-    % Adding tue simulink ethercat folder
     addpath(genpath(strcat(pathstring,'/tue_simulink_ethercat.git')))
-    
+    addpath(genpath(strcat(pathstring,'/soem.git')))
 end
 
 

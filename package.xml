@@ -8,10 +8,5 @@
 
 
   <buildtool_depend>catkin</buildtool_depend>
-  
-  <run_depend>tue_simulink_ethercat</run_depend>
-  <run_depend>tue_ethercat_drivers</run_depend>
-  <run_depend>soem_beckhoff_drivers</run_depend>
-  <run_depend>soem_master</run_depend>
 
 </package>
