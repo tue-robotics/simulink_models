@@ -15,9 +15,9 @@ if(ispc) % if Windows
 else % else Linux (Make symlink to /home/username/startup.m)
     
     % Path to github source
-    cd ~/ros/indigo/repos/https_/github.com/tue-robotics/
+    cd ~/ros/kinetic/repos/https_/github.com/tue-robotics/
     pathstring = pwd;
-    cd simulink_models.git/;
+    cd simulink_models.git/Work;
 
     % Adding folders to matlab path
     addpath(genpath(strcat(pathstring,'/simulink_models.git/')))
