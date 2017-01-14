@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.100"
+    ComputedModelVersion    "1.144"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -40,7 +40,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-211.0, 24.0, 1809.0, 1032.0]
+      Location		      [-10.0, 14.0, 1940.0, 1052.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -62,11 +62,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"1150"
-	Extents			[1753.0, 858.0]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1886.0, 859.0]
 	ZoomFactor		[1.0]
-	Offset			[1.1368683772161603e-13, -5.6843418860808015e-14]
+	Offset			[0.0, 0.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -86,7 +86,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABeAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKAD///8AAAb7AAADlAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKAD///8AAAeAAAADlQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAANF/////wAAAAAAAAAA/"
@@ -99,9 +99,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "root"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jan 14 11:52:30 2017"
-  RTWModifiedTimeStamp	  406295534
-  ModelVersionFormat	  "1.%<AutoIncrement:100>"
+  LastModifiedDate	  "Sat Jan 14 15:01:56 2017"
+  RTWModifiedTimeStamp	  406306910
+  ModelVersionFormat	  "1.%<AutoIncrement:144>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -199,7 +199,7 @@ Model {
       Description	      ""
       Array {
 	Type			"Handle"
-	Dimension		9
+	Dimension		10
 	Simulink.SolverCC {
 	  $ObjectID		  9
 	  Version		  "1.16.5"
@@ -283,24 +283,12 @@ Model {
 	Simulink.OptimizationCC {
 	  $ObjectID		  11
 	  Version		  "1.16.5"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    8
-	    Cell		    "BooleansAsBitfields"
-	    Cell		    "PassReuseOutputArgsAs"
-	    Cell		    "PassReuseOutputArgsThreshold"
-	    Cell		    "ZeroExternalMemoryAtStartup"
-	    Cell		    "ZeroInternalMemoryAtStartup"
-	    Cell		    "OptimizeModelRefInitCode"
-	    Cell		    "NoFixptDivByZeroProtection"
-	    Cell		    "UseSpecifiedMinMax"
-	    PropName		    "DisabledProps"
-	  }
+	  DisabledProps		  []
 	  Description		  ""
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
-	  DefaultParameterBehavior "Inlined"
+	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
@@ -333,7 +321,7 @@ Model {
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
 	  LifeSpan		  "auto"
-	  MaxStackSize		  "Inherit from target"
+	  MaxStackSize		  "64"
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
@@ -341,12 +329,7 @@ Model {
 	Simulink.DebuggingCC {
 	  $ObjectID		  12
 	  Version		  "1.16.5"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    "UseOnlyExistingSharedCode"
-	    PropName		    "DisabledProps"
-	  }
+	  DisabledProps		  []
 	  Description		  ""
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -468,7 +451,7 @@ Model {
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
 	  ProdLongLongMode	  off
-	  ProdHWDeviceType	  "32-bit Generic"
+	  ProdHWDeviceType	  "Generic->Unspecified (assume 32-bit Generic)"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
@@ -546,38 +529,45 @@ Model {
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    13
-	    Cell		    "IncludeHyperlinkInReport"
-	    Cell		    "GenerateTraceInfo"
-	    Cell		    "GenerateTraceReport"
-	    Cell		    "GenerateTraceReportSl"
-	    Cell		    "GenerateTraceReportSf"
-	    Cell		    "GenerateTraceReportEml"
-	    Cell		    "PortableWordSizes"
-	    Cell		    "GenerateWebview"
-	    Cell		    "GenerateCodeMetricsReport"
-	    Cell		    "GenerateCodeReplacementReport"
-	    Cell		    "GenerateMissedCodeReplacementReport"
-	    Cell		    "GenerateErtSFunction"
-	    Cell		    "CreateSILPILBlock"
+	    Dimension		    2
+	    Cell		    "TargetLang"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
 	    PropName		    "DisabledProps"
 	  }
-	  SystemTargetFile	  "mttarget.tlc"
-	  HardwareBoard		  "None"
-	  TLCOptions		  ""
+	  SystemTargetFile	  "ert.tlc"
+	  HardwareBoard		  "Robot Operating System (ROS)"
+	  TLCOptions		  "-aInlineSetEventsForThisBaseRateFcn=TLC_FALSE -aSuppressMultiTaskScheduler=TLC_FALSE  -aRateBasedSte"
+	  "pFcn=0"
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
 	  GenerateMakefile	  on
 	  PackageGeneratedCodeAndArtifacts off
 	  PackageName		  ""
-	  TemplateMakefile	  "mt_unix.tmf"
-	  PostCodeGenCommand	  ""
-	  Description		  "Generic Real-Time Target"
+	  TemplateMakefile	  "ert_default_tmf"
+	  PostCodeGenCommand	  "codertarget.postCodeGenHookCommand(h)"
+	  Description		  "Embedded Coder"
 	  GenerateReport	  on
 	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
-	  RTWBuildHooks		  []
+	  Array {
+	    Type		    "Struct"
+	    Dimension		    1
+	    MATStruct {
+	      className		      "codertarget.tools.BuildHook"
+	      Array {
+		Type			"Cell"
+		Dimension		0
+		PropName		"argsAllComponents"
+	      }
+	      argsTopModelOnly	      []
+	      excludedModels	      []
+	      includeReferencedModels "on"
+	      includeTopModel	      "on"
+	      enabled		      "on"
+	    }
+	    PropName		    "RTWBuildHooks"
+	  }
 	  ProfileTLC		  off
 	  TLCDebug		  off
 	  TLCCoverage		  off
@@ -593,10 +583,10 @@ Model {
 	  CustomLAPACKCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
-	  Toolchain		  "Automatically locate an installed toolchain"
+	  Toolchain		  "Catkin"
 	  BuildConfiguration	  "Faster Builds"
 	  CustomToolchainOptions  []
-	  IncludeHyperlinkInReport off
+	  IncludeHyperlinkInReport on
 	  LaunchReport		  on
 	  PortableWordSizes	  off
 	  CreateSILPILBlock	  "None"
@@ -605,13 +595,13 @@ Model {
 	  CodeProfilingSaveOptions "SummaryOnly"
 	  CodeProfilingInstrumentation off
 	  SILDebugging		  off
-	  TargetLang		  "C"
+	  TargetLang		  "C++"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
-	  GenerateTraceInfo	  off
-	  GenerateTraceReport	  off
-	  GenerateTraceReportSl	  off
-	  GenerateTraceReportSf	  off
-	  GenerateTraceReportEml  off
+	  GenerateTraceInfo	  on
+	  GenerateTraceReport	  on
+	  GenerateTraceReportSl	  on
+	  GenerateTraceReportSf	  on
+	  GenerateTraceReportEml  on
 	  GenerateWebview	  off
 	  GenerateCodeMetricsReport off
 	  GenerateCodeReplacementReport	off
@@ -627,42 +617,13 @@ Model {
 	    Simulink.CodeAppCC {
 	      $ObjectID		      17
 	      Version		      "1.16.5"
-	      Array {
-		Type			"Cell"
-		Dimension		25
-		Cell			"IgnoreCustomStorageClasses"
-		Cell			"IgnoreTestpoints"
-		Cell			"InsertBlockDesc"
-		Cell			"InsertPolySpaceComments"
-		Cell			"SFDataObjDesc"
-		Cell			"MATLABFcnDesc"
-		Cell			"SimulinkDataObjDesc"
-		Cell			"DefineNamingRule"
-		Cell			"SignalNamingRule"
-		Cell			"ParamNamingRule"
-		Cell			"InternalIdentifier"
-		Cell			"InlinedPrmAccess"
-		Cell			"CustomSymbolStr"
-		Cell			"CustomSymbolStrGlobalVar"
-		Cell			"CustomSymbolStrType"
-		Cell			"CustomSymbolStrField"
-		Cell			"CustomSymbolStrFcn"
-		Cell			"CustomSymbolStrModelFcn"
-		Cell			"CustomSymbolStrFcnArg"
-		Cell			"CustomSymbolStrBlkIO"
-		Cell			"CustomSymbolStrTmpVar"
-		Cell			"CustomSymbolStrMacro"
-		Cell			"CustomSymbolStrUtil"
-		Cell			"CustomUserTokenString"
-		Cell			"ReqsInCode"
-		PropName		"DisabledProps"
-	      }
+	      DisabledProps	      []
 	      Description	      ""
 	      Comment		      ""
 	      ForceParamTrailComments on
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
-	      IgnoreCustomStorageClasses on
+	      IgnoreCustomStorageClasses off
 	      IgnoreTestpoints	      off
 	      IncHierarchyInIds	      off
 	      MaxIdLength	      31
@@ -671,9 +632,9 @@ Model {
 	      ShowEliminatedStatement on
 	      OperatorAnnotations     on
 	      IncAutoGenComments      off
-	      SimulinkDataObjDesc     off
-	      SFDataObjDesc	      off
-	      MATLABFcnDesc	      off
+	      SimulinkDataObjDesc     on
+	      SFDataObjDesc	      on
+	      MATLABFcnDesc	      on
 	      IncDataTypeInIds	      off
 	      MangleLength	      1
 	      CustomSymbolStrGlobalVar "$R$N$M"
@@ -694,7 +655,7 @@ Model {
 	      ParamNamingFcn	      ""
 	      SignalNamingRule	      "None"
 	      SignalNamingFcn	      ""
-	      InsertBlockDesc	      off
+	      InsertBlockDesc	      on
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
 	      MATLABSourceComments    on
@@ -706,28 +667,14 @@ Model {
 	      UseSimReservedNames     off
 	      ReservedNameArray	      []
 	    }
-	    Simulink.GRTTargetCC {
+	    Simulink.ERTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      18
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
-		Dimension		15
-		Cell			"IncludeMdlTerminateFcn"
-		Cell			"SuppressErrorStatus"
-		Cell			"ERTCustomFileBanners"
-		Cell			"GenerateSampleERTMain"
-		Cell			"ExistingSharedCode"
-		Cell			"GenerateTestInterfaces"
-		Cell			"ModelStepFunctionPrototypeControlCompliant"
-		Cell			"GenerateAllocFcn"
-		Cell			"PurelyIntegerCode"
-		Cell			"SupportComplex"
-		Cell			"SupportAbsoluteTime"
-		Cell			"SupportContinuousTime"
-		Cell			"SupportNonInlinedSFcns"
-		Cell			"RemoveDisableFunc"
-		Cell			"RemoveResetFunc"
+		Dimension		1
+		Cell			"ERTFilePackagingFormat"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -755,49 +702,114 @@ Model {
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
 	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
+	      ERTFirstTimeCompliant   on
 	      IncludeFileDelimiter    "Auto"
-	      ERTCustomFileBanners    off
+	      ERTCustomFileBanners    on
 	      SupportAbsoluteTime     on
 	      LogVarNameModifier      "rt_"
-	      MatFileLogging	      on
+	      MatFileLogging	      off
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
 	      SupportNonFinite	      on
 	      SupportComplex	      on
 	      PurelyIntegerCode	      off
-	      SupportContinuousTime   on
+	      SupportContinuousTime   off
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
-	      RemoveResetFunc	      off
+	      RemoveResetFunc	      on
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
-	      ModelStepFunctionPrototypeControlCompliant off
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant on
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
 	      MDXCompliant	      off
 	      GRTInterface	      off
 	      GenerateAllocFcn	      off
-	      UseToolchainInfoCompliant	off
+	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
 	      CoderGroups	      []
-	      UseMalloc		      off
+	      GenerateASAP2	      off
 	      ExtMode		      off
-	      ExtModeStaticAlloc      off
-	      ExtModeTesting	      off
-	      ExtModeStaticAllocSize  1000000
 	      ExtModeTransport	      0
+	      ExtModeStaticAlloc      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTesting	      off
 	      ExtModeMexFile	      "ext_comm"
 	      ExtModeMexArgs	      ""
 	      ExtModeIntrfLevel	      "Level1"
+	      InlinedParameterPlacement	"Hierarchical"
+	      TargetOS		      "BareBoardExample"
+	      MultiInstanceErrorCode  "Error"
+	      RateGroupingCode	      on
+	      RootIOFormat	      "Individual arguments"
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
 	      RTWCAPIStates	      off
 	      RTWCAPIRootIO	      off
-	      GenerateASAP2	      off
-	      MultiInstanceErrorCode  "Error"
+	      ERTSrcFileBannerTemplate "ert_code_template.cgt"
+	      ERTHdrFileBannerTemplate "ert_code_template.cgt"
+	      ERTDataSrcFileTemplate  "ert_code_template.cgt"
+	      ERTDataHdrFileTemplate  "ert_code_template.cgt"
+	      ERTCustomFileTemplate   "codertarget_file_process.tlc"
+	      EnableDataOwnership     off
+	      SignalDisplayLevel      10
+	      ParamTuneLevel	      10
+	      GlobalDataDefinition    "Auto"
+	      DataDefinitionFile      "global.c"
+	      GlobalDataReference     "Auto"
+	      ERTFilePackagingFormat  "Modular"
+	      DataReferenceFile	      "global.h"
+	      PreserveExpressionOrder off
+	      PreserveIfCondition     off
+	      ConvertIfToSwitch	      on
+	      PreserveExternInFcnDecls on
+	      SuppressUnreachableDefaultCases on
+	      EnableSignedLeftShifts  on
+	      EnableSignedRightShifts on
+	      IndentStyle	      "K&R"
+	      IndentSize	      "2"
+	      EnableUserReplacementTypes off
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  double		  ""
+		  single		  ""
+		  int32			  ""
+		  int16			  ""
+		  int8			  ""
+		  uint32		  ""
+		  uint16		  ""
+		  uint8			  ""
+		  boolean		  ""
+		  int			  ""
+		  uint			  ""
+		  char			  ""
+		}
+		PropName		"ReplacementTypes"
+	      }
+	      MaxIdInt32	      "MAX_int32_T"
+	      MinIdInt32	      "MIN_int32_T"
+	      MaxIdUint32	      "MAX_uint32_T"
+	      MaxIdInt16	      "MAX_int16_T"
+	      MinIdInt16	      "MIN_int16_T"
+	      MaxIdUint16	      "MAX_uint16_T"
+	      MaxIdInt8		      "MAX_int8_T"
+	      MinIdInt8		      "MIN_int8_T"
+	      MaxIdUint8	      "MAX_uint8_T"
+	      BooleanTrueId	      "true"
+	      BooleanFalseId	      "false"
+	      TypeLimitIdReplacementHeaderFile ""
+	      MemSecPackage	      "--- None ---"
+	      MemSecDataConstants     "Default"
+	      MemSecDataIO	      "Default"
+	      MemSecDataInternal      "Default"
+	      MemSecDataParameters    "Default"
+	      MemSecFuncInitTerm      "Default"
+	      MemSecFuncExecute	      "Default"
+	      MemSecFuncSharedUtil    "Default"
 	    }
 	    PropName		    "Components"
 	  }
@@ -841,12 +853,70 @@ Model {
 	  CovStartTime		  0
 	  CovStopTime		  0
 	}
+	CoderTarget.SettingsController {
+	  $ObjectID		  20
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  "Coder Target"
+	  Name			  "Coder Target"
+	  Array {
+	    Type		    "Struct"
+	    Dimension		    1
+	    MATStruct {
+	      UseCoderTarget	      [1.0]
+	      TargetHardware	      "Robot Operating System (ROS)"
+	      RTOS		      "Linux"
+	      RTOSBaseRateTaskPriority "40"
+	      Scheduler_interrupt_source [0.0]
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  MaintainerName	  "Max Baeten"
+		  MaintainerEmail	  "m.j.j.baeten@gmail.com"
+		  License		  "BSD"
+		  Version		  "1.0.0"
+		}
+		PropName		"Packaging"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  DeviceAddress		  ""
+		  Username		  ""
+		}
+		PropName		"BoardParameters"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  BuildAction		  "None"
+		}
+		PropName		"Runtime"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  Install		  "/opt/ros/kinetic"
+		  CatkinWS		  "~/ros/kinetic/system/src"
+		}
+		PropName		"ROS"
+	      }
+	      DataVersion	      "2016.02"
+	    }
+	    PropName		    "CoderTargetData"
+	  }
+	}
 	PropName		"Components"
       }
       Name		      "Configuration"
-      ExtraOptions	      "-aIgnoreTestpoints=0 "
-      CurrentDlgPage	      "Code Generation/Custom Code"
-      ConfigPrmDlgPosition     [ 1, 28, 1083, 503 ] 
+      ExtraOptions	      "-aIgnoreTestpoints=0 -aInlineSetEventsForThisBaseRateFcn=TLC_FALSE -aSuppressMultiTaskSchedu"
+      "ler=TLC_FALSE -aRateBasedStepFcn=0"
+      CurrentDlgPage	      "Hardware Implementation"
+      ConfigPrmDlgPosition     [ 61, 61, 1182, 576 ] 
     }
     PropName		    "ConfigurationSets"
   }
@@ -856,7 +926,7 @@ Model {
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    20
+    $ObjectID		    21
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -972,6 +1042,24 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      Delay
+      DelayLengthSource	      "Dialog"
+      DelayLength	      "2"
+      DelayLengthUpperLimit   "100"
+      InitialConditionSource  "Dialog"
+      InitialCondition	      "0.0"
+      ExternalReset	      "None"
+      ShowEnablePort	      off
+      PreventDirectFeedthrough off
+      DiagnosticForDelayLength "None"
+      RemoveDelayLengthCheckInGeneratedCode off
+      InputProcessing	      "Elements as channels (sample based)"
+      UseCircularBuffer	      off
+      SampleTime	      "-1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+    }
+    Block {
       BlockType		      Demux
       Outputs		      "4"
       DisplayOption	      "none"
@@ -987,6 +1075,14 @@ Model {
       PhaseDelay	      "0"
       SampleTime	      "1"
       VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      From
@@ -1100,9 +1196,18 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
-      BlockType		      Scope
-      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
-      Floating		      off
+      BlockType		      SignalSpecification
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      Dimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
     }
     Block {
       BlockType		      Signum
@@ -1200,8 +1305,8 @@ Model {
   }
   System {
     Name		    "sergio_arm"
-    Location		    [-211, 24, 1598, 1056]
-    Open		    off
+    Location		    [-10, 14, 1930, 1066]
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1214,7 +1319,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1176"
+    SIDHighWatermark	    "1190"
     Block {
       BlockType		      Sum
       Name		      "Add"
@@ -1225,20 +1330,6 @@ Model {
       ShowName		      off
       IconShape		      "round"
       Inputs		      "++|"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Add1"
-      SID		      "768"
-      Ports		      [2, 1]
-      Position		      [610, 470, 640, 500]
-      ZOrder		      160
-      ShowName		      off
-      IconShape		      "round"
-      Inputs		      "|+-"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1255,7 +1346,7 @@ Model {
       Variant		      off
       System {
 	Name			"Controller\n"
-	Location		[-10, 24, 1457, 1056]
+	Location		[0, 24, 1809, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1514,7 +1605,7 @@ Model {
       Variant		      off
       System {
 	Name			"IO"
-	Location		[-10, 24, 1457, 1056]
+	Location		[58, 24, 1887, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1534,6 +1625,7 @@ Model {
 	  Position		  [55, 360, 180, 420]
 	  ZOrder		  308
 	  GotoTag		  "PL_ControlEffort"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  Demux
@@ -1568,11 +1660,13 @@ Model {
 	}
 	Block {
 	  BlockType		  Goto
-	  Name			  "Goto1"
-	  SID			  "495"
+	  Name			  "Goto"
+	  SID			  "1177"
 	  Position		  [825, 123, 910, 167]
-	  ZOrder		  149
-	  GotoTag		  "Position"
+	  ZOrder		  314
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  GotoTag		  "IO_Position"
 	  TagVisibility		  "global"
 	}
 	Block {
@@ -1627,17 +1721,6 @@ Model {
 	  DisplayOption		  "bar"
 	}
 	Block {
-	  BlockType		  Scope
-	  Name			  "Scope"
-	  SID			  "736"
-	  Ports			  [1]
-	  Position		  [825, 69, 855, 101]
-	  ZOrder		  156
-	  ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData'),StrPVP('LimitDataPoints','on'),StrPVP('DataFormat','"
-	  "Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
-	  NumInputPorts		  "1"
-	}
-	Block {
 	  BlockType		  SubSystem
 	  Name			  "TUeES030_1,2,3"
 	  SID			  "4"
@@ -1648,7 +1731,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "TUeES030_1,2,3"
-	    Location		    [0, 24, 1920, 1056]
+	    Location		    [58, 24, 1887, 1056]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3935,6 +4018,40 @@ Model {
 		  DstPort		  1
 		}
 	      }
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Display1"
+	      SID		      "1186"
+	      Ports		      [1]
+	      Position		      [-155, 20, -65, 50]
+	      ZOrder		      404
+	      Decimation	      "1"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "ECAT_Interface"
+	      SID		      "1187"
+	      Ports		      [0, 1]
+	      Position		      [-350, 0, -245, 70]
+	      ZOrder		      406
+	      BackgroundColor	      "orange"
+	      Priority		      "0"
+	      LibraryVersion	      "1.30"
+	      SourceBlock	      "SOEM_EtherCAT_Lib/ECAT_Interface"
+	      SourceType	      ""
+	      IFINTERFACE	      "eth0"
+	      TS		      "TUe.Constants.general.Ts"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain1"
+	      SID		      "1188"
+	      Position		      [-210, 20, -180, 50]
+	      ZOrder		      405
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "double"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Saturate
@@ -7885,6 +8002,20 @@ Model {
 	      DstBlock		      "Counts2Radians7"
 	      DstPort		      1
 	    }
+	    Line {
+	      ZOrder		      1279
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      DstBlock		      "Display1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      1280
+	      SrcBlock		      "ECAT_Interface"
+	      SrcPort		      1
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
 	    Annotation {
 	      SID		      "402"
 	      Name		      "Shoulder"
@@ -7908,7 +8039,7 @@ Model {
 	      ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      1135
+	      ZOrder		      1141
 	      FontSize		      12
 	    }
 	    Annotation {
@@ -7923,7 +8054,7 @@ Model {
 	      ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      1134
+	      ZOrder		      1140
 	      FontSize		      12
 	    }
 	    Annotation {
@@ -7937,7 +8068,7 @@ Model {
 	      ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      1133
+	      ZOrder		      1139
 	      FontSize		      12
 	    }
 	  }
@@ -8018,18 +8149,8 @@ Model {
 	  ZOrder		  45
 	  SrcBlock		  "Mux"
 	  SrcPort		  1
-	  Points		  [67, 0]
-	  Branch {
-	    ZOrder		    90
-	    Points		    [0, -60]
-	    DstBlock		    "Scope"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    89
-	    DstBlock		    "Goto1"
-	    DstPort		    1
-	  }
+	  DstBlock		  "Goto"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  50
@@ -8220,7 +8341,7 @@ Model {
       Variant		      off
       System {
 	Name			"Logic"
-	Location		[-10, 24, 1457, 1056]
+	Location		[58, 24, 1887, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8234,11 +8355,27 @@ Model {
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
 	Block {
+	  BlockType		  Reference
+	  Name			  "Average"
+	  SID			  "1179"
+	  Ports			  [1, 1]
+	  Position		  [280, 575, 330, 625]
+	  ZOrder		  329
+	  LibraryVersion	  "1.588"
+	  SourceBlock		  "dspstat3/Moving\nAverage"
+	  SourceType		  "dsp.MovingAverage"
+	  Method		  "Sliding window"
+	  SpecifyWindowLength	  on
+	  WindowLength		  "TUe.Constants.general.Fs/10"
+	  ForgettingFactor	  "0.9"
+	  SimulateUsing		  "Code generation"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "Chart"
 	  SID			  "1168"
-	  Ports			  [2, 1, 0, 1]
-	  Position		  [435, 215, 935, 730]
+	  Ports			  [2, 2, 0, 1]
+	  Position		  [465, 215, 965, 730]
 	  ZOrder		  322
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -8248,7 +8385,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Chart"
-	    Location		    [-10, 24, 1457, 1056]
+	    Location		    [58, 24, 1887, 1056]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -8261,7 +8398,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "86"
+	    SIDHighWatermark	    "87"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "ControlError"
@@ -8286,7 +8423,7 @@ Model {
 	      Ports		      [0, 1]
 	      Position		      [20, 171, 40, 189]
 	      ZOrder		      62
-	      TriggerType	      "function-call"
+	      TriggerType	      "either"
 	      VariantControl	      "Variant"
 	      StatesWhenEnabling      "held"
 	      ShowOutputPort	      on
@@ -8305,17 +8442,23 @@ Model {
 	      Name		      " SFunction "
 	      SID		      "1168::77"
 	      Tag		      "Stateflow S-Function sergio_arm 3"
-	      Ports		      [3, 2]
+	      Ports		      [3, 3]
 	      Position		      [180, 105, 230, 185]
 	      ZOrder		      57
 	      FunctionName	      "sf_sfun"
-	      PortCounts	      "[3 2]"
+	      PortCounts	      "[3 3]"
 	      SFunctionDeploymentMode off
-	      EnableBusSupport	      off
+	      EnableBusSupport	      on
 	      SFcnIsStateOwnerBlock   off
 	      Port {
 		PortNumber		2
 		Name			"cloop"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"State"
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
@@ -8335,15 +8478,24 @@ Model {
 	      ZOrder		      66
 	      IconDisplay	      "Port number"
 	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "State"
+	      SID		      "1168::87"
+	      Position		      [460, 136, 480, 154]
+	      ZOrder		      67
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
 	    Line {
-	      ZOrder		      34
+	      ZOrder		      46
 	      SrcBlock		      "ControlError"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      35
+	      ZOrder		      47
 	      SrcBlock		      "ControlEffort"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
@@ -8351,7 +8503,7 @@ Model {
 	    }
 	    Line {
 	      Name		      "cloop"
-	      ZOrder		      36
+	      ZOrder		      48
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      2
@@ -8359,21 +8511,30 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      37
+	      Name		      "State"
+	      ZOrder		      49
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "State"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      50
 	      SrcBlock		      " Demux "
 	      SrcPort		      1
 	      DstBlock		      " Terminator "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      38
+	      ZOrder		      51
 	      SrcBlock		      "input events"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      3
 	    }
 	    Line {
-	      ZOrder		      39
+	      ZOrder		      52
 	      SrcBlock		      " SFunction "
 	      SrcPort		      1
 	      DstBlock		      " Demux "
@@ -8382,33 +8543,84 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Goto
+	  Name			  "Cloop"
+	  SID			  "777"
+	  Position		  [1035, 325, 1230, 365]
+	  ZOrder		  153
+	  GotoTag		  "LO_Cloop"
+	  TagVisibility		  "global"
+	}
+	Block {
 	  BlockType		  From
 	  Name			  "ControlEffort"
 	  SID			  "1145"
-	  Position		  [160, 580, 355, 620]
+	  Position		  [-60, 580, 135, 620]
 	  ZOrder		  307
 	  GotoTag		  "PL_ControlEffort"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  From
 	  Name			  "ControlError"
 	  SID			  "1149"
-	  Position		  [160, 325, 355, 365]
+	  Position		  [-60, 325, 135, 365]
 	  ZOrder		  313
 	  GotoTag		  "CO_ControlError"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Delay
+	  Name			  "Delay"
+	  SID			  "1184"
+	  Ports			  [1, 1]
+	  Position		  [405, 328, 440, 362]
+	  ZOrder		  334
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	}
+	Block {
+	  BlockType		  Delay
+	  Name			  "Delay1"
+	  SID			  "1185"
+	  Ports			  [1, 1]
+	  Position		  [405, 583, 440, 617]
+	  ZOrder		  335
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	}
+	Block {
+	  BlockType		  SignalSpecification
+	  Name			  "Signal Specification"
+	  SID			  "1183"
+	  Position		  [165, 588, 245, 612]
+	  ZOrder		  332
+	  OutDataTypeStr	  "double"
+	  Dimensions		  "7"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "State"
+	  SID			  "1180"
+	  Position		  [1035, 580, 1230, 620]
+	  ZOrder		  330
+	  GotoTag		  "LO_State"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Trigger"
 	  SID			  "1169"
 	  Ports			  [0, 1]
-	  Position		  [445, 55, 640, 145]
+	  Position		  [435, 55, 630, 145]
 	  ZOrder		  -6
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Trigger"
-	    Location		    [-10, 24, 1457, 1056]
+	    Location		    [58, 24, 1887, 1056]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -8463,7 +8675,7 @@ Model {
 	      Position		      [165, 124, 195, 156]
 	      ZOrder		      326
 	      PulseType		      "Time based"
-	      Period		      "TUe.Constants.general.Ts"
+	      Period		      "TUe.Constants.general.Ts*2"
 	      PulseWidth	      "50"
 	    }
 	    Block {
@@ -8479,11 +8691,12 @@ Model {
 	    }
 	    Block {
 	      BlockType		      From
-	      Name		      "ROS_UIBUS"
+	      Name		      "ROS_UIbus"
 	      SID		      "1160"
 	      Position		      [165, 243, 250, 287]
 	      ZOrder		      323
-	      GotoTag		      "ROS_UIBUS"
+	      GotoTag		      "ROS_UIbus"
+	      TagVisibility	      "global"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -8502,7 +8715,7 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      6
-	      SrcBlock		      "ROS_UIBUS"
+	      SrcBlock		      "ROS_UIbus"
 	      SrcPort		      1
 	      DstBlock		      "Bus\nSelector"
 	      DstPort		      1
@@ -8552,34 +8765,18 @@ Model {
 	    }
 	  }
 	}
-	Block {
-	  BlockType		  Goto
-	  Name			  "cloop"
-	  SID			  "777"
-	  Position		  [1050, 455, 1245, 495]
-	  ZOrder		  153
-	  GotoTag		  "LO_cloop"
-	  TagVisibility		  "global"
-	}
 	Line {
 	  ZOrder		  1
 	  SrcBlock		  "ControlEffort"
 	  SrcPort		  1
-	  DstBlock		  "Chart"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  2
-	  SrcBlock		  "ControlError"
-	  SrcPort		  1
-	  DstBlock		  "Chart"
+	  DstBlock		  "Signal Specification"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  4
 	  SrcBlock		  "Trigger"
 	  SrcPort		  1
-	  Points		  [40, 0]
+	  Points		  [80, 0]
 	  DstBlock		  "Chart"
 	  DstPort		  trigger
 	}
@@ -8587,8 +8784,50 @@ Model {
 	  ZOrder		  5
 	  SrcBlock		  "Chart"
 	  SrcPort		  1
-	  DstBlock		  "cloop"
+	  DstBlock		  "Cloop"
 	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "ControlError"
+	  SrcPort		  1
+	  DstBlock		  "Delay"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Average"
+	  SrcPort		  1
+	  DstBlock		  "Delay1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Chart"
+	  SrcPort		  2
+	  DstBlock		  "State"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Signal Specification"
+	  SrcPort		  1
+	  DstBlock		  "Average"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Delay"
+	  SrcPort		  1
+	  DstBlock		  "Chart"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Delay1"
+	  SrcPort		  1
+	  DstBlock		  "Chart"
+	  DstPort		  2
 	}
       }
     }
@@ -8604,7 +8843,7 @@ Model {
       Variant		      off
       System {
 	Name			"Plant"
-	Location		[0, 24, 1920, 1056]
+	Location		[58, 24, 1887, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8621,7 +8860,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "In"
 	  SID			  "751"
-	  Position		  [125, 153, 155, 167]
+	  Position		  [80, 153, 110, 167]
 	  ZOrder		  305
 	  IconDisplay		  "Port number"
 	}
@@ -8647,9 +8886,10 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain"
 	  SID			  "742"
-	  Position		  [585, 140, 615, 170]
+	  Position		  [570, 127, 645, 183]
 	  ZOrder		  303
-	  Gain			  "eye(7)"
+	  Gain			  "TUe.Constants.mdl.Motor2JointSpace"
+	  Multiplication	  "Matrix(K*u)"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -8658,9 +8898,10 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain1"
 	  SID			  "743"
-	  Position		  [195, 145, 225, 175]
+	  Position		  [155, 132, 230, 188]
 	  ZOrder		  304
-	  Gain			  "eye(7)"
+	  Gain			  "TUe.Constants.mdl.Joint2MotorSpace "
+	  Multiplication	  "Matrix(K*u)"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -8715,8 +8956,8 @@ Model {
       Variant		      off
       System {
 	Name			"ROS"
-	Location		[-211, 24, 1598, 1056]
-	Open			on
+	Location		[58, 24, 1887, 1056]
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -8739,6 +8980,17 @@ Model {
 	  Inputs		  "4"
 	  DisplayOption		  "bar"
 	  InheritFromInputs	  on
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From"
+	  SID			  "1181"
+	  Position		  [1120, 210, 1315, 250]
+	  ZOrder		  332
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "yellow"
+	  GotoTag		  "LO_State"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  Constant
@@ -8797,12 +9049,19 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "1182"
+	  Position		  [1430, 220, 1450, 240]
+	  ZOrder		  333
+	}
+	Block {
 	  BlockType		  Goto
-	  Name			  "UIBUS"
+	  Name			  "UIbus"
 	  SID			  "1159"
 	  Position		  [865, 208, 950, 252]
 	  ZOrder		  319
-	  GotoTag		  "ROS_UIBUS"
+	  GotoTag		  "ROS_UIbus"
 	  TagVisibility		  "global"
 	}
 	Line {
@@ -8845,7 +9104,14 @@ Model {
 	  ZOrder		  8
 	  SrcBlock		  "Bus\nCreator"
 	  SrcPort		  1
-	  DstBlock		  "UIBUS"
+	  DstBlock		  "UIbus"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "From"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
 	  DstPort		  1
 	}
       }
@@ -8866,7 +9132,7 @@ Model {
       Name		      "Terminator"
       SID		      "497"
       Position		      [1460, 475, 1480, 495]
-      ZOrder		      148
+      ZOrder		      164
     }
     Block {
       BlockType		      SubSystem
@@ -8880,7 +9146,7 @@ Model {
       Variant		      off
       System {
 	Name			"Traject Generator"
-	Location		[0, 24, 1920, 1056]
+	Location		[0, 24, 1809, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8972,34 +9238,8 @@ Model {
       SID		      "769"
       Position		      [230, 378, 315, 422]
       ZOrder		      161
-      GotoTag		      "LO_cloop"
+      GotoTag		      "LO_Cloop"
       TagVisibility	      "global"
-    }
-    Line {
-      ZOrder		      17
-      SrcBlock		      "Plant"
-      SrcPort		      1
-      Points		      [49, 0]
-      Branch {
-	ZOrder			41
-	Points			[0, 105; -724, 0]
-	Branch {
-	  ZOrder		  39
-	  Points		  [-286, 0; 0, -80]
-	  DstBlock		  "Traject Generator"
-	  DstPort		  2
-	}
-	Branch {
-	  ZOrder		  30
-	  DstBlock		  "Add1"
-	  DstPort		  2
-	}
-      }
-      Branch {
-	ZOrder			26
-	DstBlock		"Terminator"
-	DstPort			1
-      }
     }
     Line {
       ZOrder		      20
@@ -9032,20 +9272,6 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      24
-      SrcBlock		      "Traject Generator"
-      SrcPort		      1
-      DstBlock		      "Add1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      25
-      SrcBlock		      "Add1"
-      SrcPort		      1
-      DstBlock		      "Controller\n"
-      DstPort		      2
-    }
-    Line {
       ZOrder		      31
       SrcBlock		      "cloop"
       SrcPort		      1
@@ -9062,6 +9288,30 @@ Model {
 	DstPort			1
       }
     }
+    Line {
+      ZOrder		      55
+      SrcBlock		      "Traject Generator"
+      SrcPort		      1
+      DstBlock		      "Controller\n"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      17
+      SrcBlock		      "Plant"
+      SrcPort		      1
+      Points		      [49, 0]
+      Branch {
+	ZOrder			58
+	DstBlock		"Terminator"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			57
+	Points			[0, 105; -1010, 0; 0, -80]
+	DstBlock		"Traject Generator"
+	DstPort			2
+      }
+    }
   }
 }
 #Finite State Machines
@@ -9076,14 +9326,14 @@ Stateflow {
     created		    "14-Jan-2017 10:36:45"
     isLibrary		    0
     sfVersion		    80000010
-    firstTarget		    28
+    firstTarget		    36
   }
   chart {
     id			    2
     machine		    1
     name		    "Logic/Chart"
-    windowPosition	    [199.5 216.75 417 348.75]
-    viewLimits		    [117.992 1528.992 -12.167 845.833]
+    windowPosition	    [58 24 1829 1032]
+    viewLimits		    [117.992 1890.992 -12.167 839.833]
     zoomFactor		    1.333
     transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
@@ -9093,9 +9343,7 @@ Stateflow {
     treeNode		    [0 3 0 0]
     viewObj		    2
     visible		    1
-    subviewS {
-    }
-    ssIdHighWaterMark	    69
+    ssIdHighWaterMark	    82
     decomposition	    SET_CHART
     chartFileNumber	    3
     allowGlobalAccessToExportedFunctions 0
@@ -9103,8 +9351,8 @@ Stateflow {
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
     actionLanguage	    2
-    firstData		    20
-    firstEvent		    23
+    firstData		    23
+    firstEvent		    29
   }
   state {
     id			    3
@@ -9112,15 +9360,15 @@ Stateflow {
     position		    [239 127 205 171]
     fontSize		    12
     chart		    2
-    treeNode		    [2 7 0 4]
+    treeNode		    [2 9 0 4]
     superState		    SUBCHART
     subviewer		    2
     subviewS {
-      panLimits		      [-248.455 1515.295 -290.963 781.537]
-      x1		      137.333
-      y1		      187.333
+      panLimits		      [-189.372 2026.878 -137.463 927.537]
+      x1		      287.333
+      y1		      219.333
       zoomFactor	      1.667
-      pos		      [20.798 20.918 1433.629 891.263]
+      pos		      [20.878 20.418 1586.049 952.869]
     }
     ssIdNumber		    20
     type		    AND_STATE
@@ -9134,13 +9382,14 @@ Stateflow {
     position		    [239 329 202 154]
     fontSize		    12
     chart		    2
-    treeNode		    [2 10 3 0]
+    treeNode		    [2 0 3 0]
     superState		    SUBCHART
     subviewer		    2
     subviewS {
-      panLimits		      [-24 417 -24 349]
+      panLimits		      [332.75 1219.25 138 564]
       x1		      20.333
       y1		      20.333
+      zoomFactor	      0.667
       pos		      [47 47 1204 767]
     }
     ssIdNumber		    22
@@ -9148,14 +9397,15 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     executionOrder	    2
     firstTransition	    18
+    firstJunction	    16
   }
   state {
     id			    5
-    labelString		    "Error"
-    position		    [792.5482 315.9177 268 130]
+    labelString		    "Error\nentry: State=3"
+    position		    [945.0482 347.9177 268 130]
     fontSize		    12
     chart		    2
-    treeNode		    [3 0 8 6]
+    treeNode		    [9 0 8 0]
     subviewer		    3
     ssIdNumber		    23
     type		    OR_STATE
@@ -9163,11 +9413,11 @@ Stateflow {
   }
   state {
     id			    6
-    labelString		    "Operational"
-    position		    [475.2982 638.1677 331 169]
+    labelString		    "Operational\nentry: State=4"
+    position		    [625.2982 670.1677 331 169]
     fontSize		    12
     chart		    2
-    treeNode		    [3 0 5 0]
+    treeNode		    [10 0 0 0]
     subviewer		    3
     ssIdNumber		    29
     type		    OR_STATE
@@ -9175,11 +9425,11 @@ Stateflow {
   }
   state {
     id			    7
-    labelString		    "Idle"
-    position		    [314.2982 75.4177 771 122]
+    labelString		    "Idle\nentry: State=1"
+    position		    [464.2982 107.4177 771 122]
     fontSize		    12
     chart		    2
-    treeNode		    [3 0 0 8]
+    treeNode		    [9 0 0 8]
     subviewer		    3
     ssIdNumber		    30
     type		    OR_STATE
@@ -9187,11 +9437,11 @@ Stateflow {
   }
   state {
     id			    8
-    labelString		    "Homing"
-    position		    [152.7982 296.9177 331 169]
+    labelString		    "Homing\nentry: State=2"
+    position		    [364.0482 308.9177 331 169]
     fontSize		    12
     chart		    2
-    treeNode		    [3 0 7 5]
+    treeNode		    [9 0 7 5]
     subviewer		    3
     ssIdNumber		    31
     type		    OR_STATE
@@ -9199,44 +9449,45 @@ Stateflow {
   }
   state {
     id			    9
-    labelString		    "LoopClosed\nentry: cloop = true;\n"
-    position		    [387.5 453 425 153]
+    labelString		    "LoopBroken\nentry: cloop = false;"
+    position		    [325.6283 62.1677 963.75 513.75]
     fontSize		    12
     chart		    2
-    treeNode		    [4 0 10 0]
-    subviewer		    4
-    ssIdNumber		    44
+    treeNode		    [3 7 0 10]
+    subviewer		    3
+    ssIdNumber		    78
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
+    firstTransition	    21
   }
   state {
     id			    10
-    labelString		    "LoopBroken\nentry: cloop = false;\n"
-    position		    [390 175 420 137]
+    labelString		    "LoopClosed\nentry: cloop = true;"
+    position		    [325.6283 595.787 980 325]
     fontSize		    12
     chart		    2
-    treeNode		    [4 0 0 9]
-    subviewer		    4
-    ssIdNumber		    45
+    treeNode		    [3 6 9 0]
+    subviewer		    3
+    ssIdNumber		    77
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
   }
   transition {
     id			    11
     labelString		    ""
-    labelPosition	    [506.298 55.918 0 0]
+    labelPosition	    [656.878 70.102 0 0]
     fontSize		    12
     src {
-      intersection	      [0 0 1 0 506.2982 44.4177 0 0]
+      intersection	      [0 0 1 0 656.8783 40.787 0 0]
     }
     dst {
       id		      7
-      intersection	      [1 0 -1 0.249 506.2982 75.4177 0 0]
+      intersection	      [1 0 -1 0.2498 656.8783 107.4177 0 0]
     }
-    midPoint		    [506.2982 55.9177]
+    midPoint		    [656.8783 70.1024]
     chart		    2
     visible		    0
-    dataLimits		    [503.898 508.698 44.418 75.418]
+    dataLimits		    [654.478 659.278 40.787 107.418]
     subviewer		    3
     slide {
       sticky		      BOTH_STICK
@@ -9247,46 +9498,20 @@ Stateflow {
   }
   transition {
     id			    12
-    labelString		    "UI_Home"
-    labelPosition	    [454.295 248.08 52.641 16]
-    fontSize		    12
-    src {
-      id		      7
-      intersection	      [3 -0 1 0.8392 438.2982 197.4177 0 0]
-    }
-    dst {
-      id		      8
-      intersection	      [1 0 -1 0.8625 438.2982 296.9177 0 0]
-    }
-    midPoint		    [438.2982 243.1677]
-    chart		    2
-    visible		    0
-    dataLimits		    [435.898 440.698 197.418 296.918]
-    subviewer		    3
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    25
-    linkNode		    [3 11 13]
-  }
-  transition {
-    id			    13
     labelString		    " UI_Start"
-    labelPosition	    [598.295 413.793 50.297 16]
+    labelPosition	    [748.295 445.793 50.297 16]
     fontSize		    12
     src {
       id		      7
-      intersection	      [3 0 1 0.6317 598.2949 197.4177 0 0]
+      intersection	      [3 0 1 0.6317 748.2949 229.4177 0 0]
     }
     dst {
       id		      6
-      intersection	      [1 -0 -1 0.3716 598.2949 638.1677 0 0]
+      intersection	      [1 -0 -1 0.3716 748.2949 670.1677 0 0]
     }
-    midPoint		    [598.2949 413.7927]
+    midPoint		    [748.2949 445.7927]
     chart		    2
-    dataLimits		    [595.895 600.695 197.418 638.168]
+    dataLimits		    [745.895 750.695 229.418 670.168]
     subviewer		    3
     drawStyle		    SMART
     slide {
@@ -9294,24 +9519,24 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    49
-    linkNode		    [3 12 14]
+    linkNode		    [3 11 13]
   }
   transition {
-    id			    14
+    id			    13
     labelString		    " UI_Stop"
-    labelPosition	    [698.545 421.793 48.656 16]
+    labelPosition	    [848.545 453.793 48.656 16]
     fontSize		    12
     src {
       id		      6
-      intersection	      [1 0 -1 0.6745 698.5449 638.1677 0 0]
+      intersection	      [1 0 -1 0.6745 848.5449 670.1677 0 0]
     }
     dst {
       id		      7
-      intersection	      [3 -0 1 0.5016 698.5449 197.4177 0 0]
+      intersection	      [3 -0 1 0.5016 848.5449 229.4177 0 0]
     }
-    midPoint		    [698.5449 421.7927]
+    midPoint		    [848.5449 453.7927]
     chart		    2
-    dataLimits		    [696.145 700.945 197.418 638.168]
+    dataLimits		    [846.145 850.945 229.418 670.168]
     subviewer		    3
     drawStyle		    SMART
     slide {
@@ -9319,74 +9544,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    54
-    linkNode		    [3 13 15]
+    linkNode		    [3 12 14]
   }
   transition {
-    id			    15
-    labelString		    "UI_Reset"
-    labelPosition	    [899.957 240.743 52.984 16]
-    fontSize		    12
-    src {
-      id		      5
-      intersection	      [1 0 -1 0.4123 903.0449 315.9177 0 0]
-    }
-    dst {
-      id		      7
-      intersection	      [3 0 1 0.2364 903.0449 197.4177 0 0]
-    }
-    midPoint		    [903.0449 260.6677]
-    chart		    2
-    dataLimits		    [900.645 905.445 197.418 315.918]
-    subviewer		    3
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    47
-    linkNode		    [3 14 16]
-  }
-  transition {
-    id			    16
-    labelString		    "[~cloop]"
-    labelPosition	    [914.295 581.787 44.328 16]
-    fontSize		    12
-    src {
-      id		      6
-      intersection	      [2 1 0 0.443 806.2982 713.0367 0 0]
-    }
-    dst {
-      id		      5
-      intersection	      [3 0 1 0.583 904.2949 445.9177 0 0]
-    }
-    midPoint		    [889.9254 618.106]
-    chart		    2
-    dataLimits		    [806.298 906.695 445.918 713.037]
-    subviewer		    3
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    2
-    ssIdNumber		    56
-    linkNode		    [3 15 17]
-  }
-  transition {
-    id			    17
+    id			    14
     labelString		    ""
-    labelPosition	    [356.236 609.537 0 0]
+    labelPosition	    [498.372 639.402 0 0]
     fontSize		    12
     src {
       id		      8
-      intersection	      [3 0 1 0.5008 318.0449 465.9177 0 0]
+      intersection	      [3 0 1 0.7115 459.5449 477.9177 0 0]
     }
     dst {
       id		      6
-      intersection	      [4 -1 0 0.5378 475.2982 716.2867 0 0]
+      intersection	      [4 -1 0 0.4875 625.2982 756.7867 0 0]
     }
-    midPoint		    [356.2364 627.5373]
+    midPoint		    [498.372 657.4018]
     chart		    2
-    dataLimits		    [318.045 475.298 465.918 718.687]
+    dataLimits		    [459.545 625.298 477.918 759.187]
     subviewer		    3
     drawStyle		    SMART
     slide {
@@ -9394,60 +9569,177 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    53
-    linkNode		    [3 16 0]
+    linkNode		    [3 13 15]
   }
   transition {
-    id			    18
-    labelString		    ""
-    labelPosition	    [454.5 378.5 0 0]
+    id			    15
+    labelString		    "BreakLoopEvt"
+    labelPosition	    [1058.297 627.388 78.344 16]
     fontSize		    12
     src {
-      id		      10
-      intersection	      [3 0 1 0.8464 454.5 312 0 0]
+      id		      6
+      intersection	      [2 1 0 0.443 956.2982 745.0367 0 0]
     }
     dst {
-      id		      9
-      intersection	      [1 -0 -1 0.1576 454.5 453 0 0]
+      id		      5
+      intersection	      [3 0 1 0.5924 1054.2949 477.9177 0 0]
     }
-    midPoint		    [454.5 378.5]
+    midPoint		    [1039.9254 650.106]
     chart		    2
-    dataLimits		    [452.1 456.9 312 453]
-    subviewer		    4
+    dataLimits		    [956.298 1056.695 477.918 745.037]
+    subviewer		    3
     drawStyle		    SMART
     slide {
       sticky		      BOTH_STICK
     }
+    executionOrder	    2
+    ssIdNumber		    56
+    linkNode		    [3 14 0]
+  }
+  junction {
+    id			    16
+    position		    [657 351 7]
+    chart		    2
+    subviewer		    4
+    ssIdNumber		    74
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 0 17]
+  }
+  junction {
+    id			    17
+    position		    [895 351 7]
+    chart		    2
+    subviewer		    4
+    ssIdNumber		    79
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 16 0]
+  }
+  transition {
+    id			    18
+    labelString		    "[any(ControlEffort>ControlEffortBound)]"
+    labelPosition	    [437.841 240.778 212.219 16]
+    fontSize		    12
+    src {
+      intersection	      [0 0.9408 0.339 0 324 231 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [4 -0.9408 -0.339 0 650.4145 348.6269 0 0]
+    }
+    midPoint		    [483.4442 288.4574]
+    chart		    2
+    visible		    0
+    dataLimits		    [324 650.415 231 348.627]
+    subviewer		    4
+    slide {
+      sticky		      BOTH_STICK
+    }
     executionOrder	    1
-    ssIdNumber		    46
+    ssIdNumber		    75
     linkNode		    [4 0 19]
   }
   transition {
     id			    19
-    labelString		    ""
-    labelPosition	    [670.5 386.5 0 0]
+    labelString		    "{BreakLoopEvt}"
+    labelPosition	    [708.198 302.962 85.344 16]
     fontSize		    12
     src {
-      id		      9
-      intersection	      [1 0 -1 0.6659 670.5 453 0 0]
+      id		      16
+      intersection	      [2 1 -0 0 664 351 0 0]
     }
     dst {
-      id		      10
-      intersection	      [3 0 1 0.3321 670.5 312 0 0]
+      id		      17
+      intersection	      [4 -1 0 0 888 351 0 0]
     }
-    midPoint		    [670.5 386.5]
+    midPoint		    [772 351]
     chart		    2
     visible		    0
-    dataLimits		    [668.1 672.9 312 453]
+    dataLimits		    [664 888 348.6 353.4]
     subviewer		    4
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    57
-    linkNode		    [4 18 0]
+    linkNode		    [4 18 20]
+  }
+  transition {
+    id			    20
+    labelString		    "[any(ControlError>ControlErrorBound)]"
+    labelPosition	    [448.374 434.031 208.188 16]
+    fontSize		    12
+    src {
+      intersection	      [0 0.9518 -0.3067 0 328 457 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [4 -0.9518 0.3067 0 650.3373 353.1467 0 0]
+    }
+    midPoint		    [485.3614 406.3]
+    chart		    2
+    visible		    0
+    dataLimits		    [328 650.337 353.147 457]
+    subviewer		    4
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    76
+    linkNode		    [4 19 0]
+  }
+  transition {
+    id			    21
+    labelString		    "UI_Home"
+    labelPosition	    [665.545 267.037 52.641 16]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 -0 1 0.7597 649.5482 229.4177 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [1 0 -1 0.8625 649.5482 308.9177 0 0]
+    }
+    midPoint		    [649.5482 265.1677]
+    chart		    2
+    visible		    0
+    dataLimits		    [647.148 651.948 229.418 308.918]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    25
+    linkNode		    [9 0 22]
+  }
+  transition {
+    id			    22
+    labelString		    "UI_Reset"
+    labelPosition	    [1052.457 272.743 52.984 16]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [1 0 -1 0.4123 1055.5449 347.9177 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [3 0 1 0.2331 1055.5449 229.4177 0 0]
+    }
+    midPoint		    [1055.5449 292.6677]
+    chart		    2
+    dataLimits		    [1053.145 1057.945 229.418 347.918]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    47
+    linkNode		    [9 21 0]
   }
   data {
-    id			    20
+    id			    23
     ssIdNumber		    63
     name		    "ControlError"
     scope		    INPUT_DATA
@@ -9469,10 +9761,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 0 21]
+    linkNode		    [2 0 24]
   }
   data {
-    id			    21
+    id			    24
     ssIdNumber		    68
     name		    "ControlEffort"
     scope		    INPUT_DATA
@@ -9494,10 +9786,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 20 22]
+    linkNode		    [2 23 25]
   }
   data {
-    id			    22
+    id			    25
     ssIdNumber		    69
     name		    "cloop"
     scope		    OUTPUT_DATA
@@ -9519,55 +9811,154 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 21 0]
+    linkNode		    [2 24 26]
+  }
+  data {
+    id			    26
+    ssIdNumber		    80
+    name		    "ControlErrorBound"
+    scope		    CONSTANT_DATA
+    machine		    1
+    props {
+      initialValue	      "TUe.Constants.mdl.controlEffortBound"
+      array {
+	size			"7"
+      }
+      type {
+	method			SF_DOUBLE_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "double"
+    linkNode		    [2 25 27]
+  }
+  data {
+    id			    27
+    ssIdNumber		    81
+    name		    "ControlEffortBound"
+    scope		    CONSTANT_DATA
+    machine		    1
+    props {
+      initialValue	      "TUe.Constants.mdl.controlEffortBound"
+      array {
+	size			"7"
+      }
+      type {
+	method			SF_DOUBLE_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "double"
+    linkNode		    [2 26 28]
+  }
+  data {
+    id			    28
+    ssIdNumber		    82
+    name		    "State"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 27 0]
   }
   event {
-    id			    23
+    id			    29
+    ssIdNumber		    70
+    name		    "trigger"
+    scope		    INPUT_EVENT
+    trigger		    EITHER_EDGE_EVENT
+    machine		    1
+    linkNode		    [2 0 30]
+  }
+  event {
+    id			    30
     ssIdNumber		    67
     name		    "UI_Reset"
     scope		    INPUT_EVENT
-    trigger		    FUNCTION_CALL_EVENT
+    trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 0 24]
+    linkNode		    [2 29 31]
   }
   event {
-    id			    24
+    id			    31
     ssIdNumber		    66
     name		    "UI_Home"
     scope		    INPUT_EVENT
-    trigger		    FUNCTION_CALL_EVENT
+    trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 23 25]
+    linkNode		    [2 30 32]
   }
   event {
-    id			    25
+    id			    32
     ssIdNumber		    65
     name		    "UI_Stop"
     scope		    INPUT_EVENT
-    trigger		    FUNCTION_CALL_EVENT
+    trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 24 26]
+    linkNode		    [2 31 33]
   }
   event {
-    id			    26
+    id			    33
     ssIdNumber		    64
     name		    "UI_Start"
     scope		    INPUT_EVENT
+    trigger		    RISING_EDGE_EVENT
+    machine		    1
+    linkNode		    [2 32 34]
+  }
+  event {
+    id			    34
+    ssIdNumber		    73
+    name		    "BreakLoopEvt"
+    scope		    LOCAL_EVENT
     trigger		    FUNCTION_CALL_EVENT
     machine		    1
-    linkNode		    [2 25 0]
+    linkNode		    [2 33 0]
   }
   instance {
-    id			    27
+    id			    35
     machine		    1
     name		    "Logic/Chart"
     chart		    2
   }
   target {
-    id			    28
+    id			    36
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
-    linkNode		    [1 0 0]
+    linkNode		    [1 0 37]
+  }
+  target {
+    id			    37
+    machine		    1
+    name		    "rtw"
+    linkNode		    [1 36 0]
   }
 }

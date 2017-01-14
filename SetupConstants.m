@@ -48,6 +48,22 @@ Constants.mdl.control.Kd 		= [4, 		4, 		2, 		0.005, 	0.5,	0.0,	0.0];
 Constants.mdl.control.Ki 		= [10, 		10, 	10, 	0.01, 	10,		0.0,	0.0];
 Constants.mdl.control.iLim      = [10, 		10, 	10, 	2, 		10,		1.0, 	0.0];
 
+%% Matrices for switching between Motor and Jointspace
+Constants.mdl.Motor2JointSpace  = [	0.5,    0.5,    0,      0,      0,      0,      0;
+                                   -0.5,    0.5,    0,      0,      0,      0,      0;
+                                    0,      0,      1,      0,      0,      0,      0;
+                                    0,      0,      0,      0.5,    0.5,    0,      0;
+                                    0,      0,      0,      0.5,   -0.5,    0,      0;
+                                    0,      0,      0,      0,      0,      1,      0;
+                                    0,      0,      0,      0,      0,      0,      1];
+                                
+Constants.mdl.Joint2MotorSpace  = inv(Constants.mdl.Motor2JointSpace);
+
+%% Stateflow constants
+Constants.mdl.controlErrorBound = [0.01, 	0.01, 	0.01, 	0.01, 	0.01,	0.01,	0.01]; 
+Constants.mdl.controlEffortBound = [10.0, 	10.0, 	10.0, 	10.0, 	10.0,	10.0,	10.0]; 
+
+
 % JointLimitMin 	= [-129,   -5.7, 	0, 		0, 		-12.35,	-129,	-5.7];
 % JointLimitMax 	= [ 195,	178.3, 	182, 	129, 	278.5,  195,	178.3];
 % absLimMin		= [ 1217,	161,	4084,	135,	33,		1217,	395];
