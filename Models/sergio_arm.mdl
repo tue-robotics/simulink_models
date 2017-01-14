@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.72"
+    ComputedModelVersion    "1.89"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -40,7 +40,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 24.0, 1920.0, 1032.0]
+      Location		      [-10.0, 24.0, 1467.0, 1032.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -57,32 +57,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1886.0, 853.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, -33.228549748659134]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "470"
-	  Extents		  [1886.0, 853.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"StateflowState"
+	LoadSaveID		"1168:20"
+	Extents			[1411.0, 858.0]
+	ZoomFactor		[0.8]
+	Offset			[-300.70510834116, -200.21332095345321]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		7
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -98,7 +86,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABeAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKAD///8AAAeAAAADlQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKAD///8AAAWlAAADlAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAANF/////wAAAAAAAAAA/"
@@ -109,11 +97,11 @@ Model {
   Creator		  "baetenmjj"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "maxbaeten"
+  LastModifiedBy	  "root"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jan 07 12:10:48 2017"
-  RTWModifiedTimeStamp	  405691836
-  ModelVersionFormat	  "1.%<AutoIncrement:72>"
+  LastModifiedDate	  "Sat Jan 14 10:59:11 2017"
+  RTWModifiedTimeStamp	  406291692
+  ModelVersionFormat	  "1.%<AutoIncrement:89>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -161,7 +149,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "sergio_arm"
     overrideMode_	    [0.0]
@@ -205,7 +193,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      8
       Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
@@ -213,7 +201,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  9
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -253,7 +241,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -293,7 +281,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -351,7 +339,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -459,7 +447,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -507,7 +495,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -526,7 +514,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -554,7 +542,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -637,7 +625,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      17
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -720,7 +708,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      18
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -815,7 +803,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  19
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -864,11 +852,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    9
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -949,6 +937,12 @@ Model {
       CheckOORBitShift	      off
     }
     Block {
+      BlockType		      BusCreator
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
       BlockType		      Constant
       Value		      "1"
       VectorParams1D	      on
@@ -1006,6 +1000,9 @@ Model {
       TagVisibility	      "local"
     }
     Block {
+      BlockType		      Ground
+    }
+    Block {
       BlockType		      Inport
       Port		      "1"
       OutputFunctionCall      off
@@ -1059,6 +1056,20 @@ Model {
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
     }
     Block {
       BlockType		      Saturate
@@ -1154,8 +1165,8 @@ Model {
   }
   System {
     Name		    "sergio_arm"
-    Location		    [0, 24, 1920, 1056]
-    Open		    on
+    Location		    [-10, 24, 1457, 1056]
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1168,20 +1179,49 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "741"
+    SIDHighWatermark	    "1168"
+    Block {
+      BlockType		      Sum
+      Name		      "Add"
+      SID		      "756"
+      Ports		      [2, 1]
+      Position		      [935, 470, 965, 500]
+      ZOrder		      154
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++|"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add1"
+      SID		      "768"
+      Ports		      [2, 1]
+      Position		      [610, 470, 640, 500]
+      ZOrder		      160
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
     Block {
       BlockType		      SubSystem
-      Name		      "IO"
-      SID		      "470"
-      Ports		      []
-      Position		      [1010, 27, 1125, 143]
-      ZOrder		      -3
+      Name		      "Controller\n"
+      SID		      "744"
+      Ports		      [2, 1]
+      Position		      [690, 356, 860, 529]
+      ZOrder		      150
+      BackgroundColor	      "green"
       RequestExecContextInheritance off
       Variant		      off
       System {
-	Name			"IO"
+	Name			"Controller\n"
 	Location		[0, 24, 1920, 1056]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1194,6 +1234,272 @@ Model {
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
 	Block {
+	  BlockType		  Inport
+	  Name			  "cloop"
+	  SID			  "753"
+	  Position		  [405, 278, 435, 292]
+	  ZOrder		  307
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Error"
+	  SID			  "752"
+	  Position		  [405, 198, 435, 212]
+	  ZOrder		  306
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "491"
+	  Position		  [405, 350, 435, 380]
+	  ZOrder		  310
+	  Value			  "[0, 0, 0, 0, 0, 0, 0]"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "ControlError"
+	  SID			  "1148"
+	  Position		  [560, 68, 645, 112]
+	  ZOrder		  311
+	  GotoTag		  "CO_ControlError"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Discrete PID Controller"
+	  SID			  "754"
+	  Ports			  [1, 1]
+	  Position		  [485, 160, 620, 250]
+	  ZOrder		  308
+	  LibraryVersion	  "1.388"
+	  SourceBlock		  "simulink/Continuous/PID Controller"
+	  SourceType		  "PID 1dof"
+	  ContentPreviewEnabled	  off
+	  Controller		  "PID"
+	  TimeDomain		  "Discrete-time"
+	  SampleTime		  "-1"
+	  IntegratorMethod	  "Forward Euler"
+	  FilterMethod		  "Forward Euler"
+	  Form			  "Parallel"
+	  UseFilter		  on
+	  ControllerParametersSource "internal"
+	  P			  "TUe.Constants.mdl.control.Kc"
+	  I			  "TUe.Constants.mdl.control.Ki"
+	  D			  "TUe.Constants.mdl.control.Kd"
+	  N			  "100"
+	  InitialConditionSource  "internal"
+	  InitialConditionForIntegrator	"0"
+	  InitialConditionForFilter "0"
+	  ExternalReset		  "none"
+	  IgnoreLimit		  off
+	  ZeroCross		  on
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  LinearizeAsGain	  off
+	  AntiWindupMode	  "none"
+	  Kb			  "1"
+	  TrackingMode		  off
+	  Kt			  "1"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	  LockScale		  off
+	  PParamMin		  "[]"
+	  PParamMax		  "[]"
+	  PParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  IParamMin		  "[]"
+	  IParamMax		  "[]"
+	  IParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  DParamMin		  "[]"
+	  DParamMax		  "[]"
+	  DParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  NParamMin		  "[]"
+	  NParamMax		  "[]"
+	  NParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  KbParamMin		  "[]"
+	  KbParamMax		  "[]"
+	  KbParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  KtParamMin		  "[]"
+	  KtParamMax		  "[]"
+	  KtParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  POutMin		  "[]"
+	  POutMax		  "[]"
+	  POutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  PGainOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  PProdOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  IOutMin		  "[]"
+	  IOutMax		  "[]"
+	  IOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  IGainOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  IProdOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  DOutMin		  "[]"
+	  DOutMax		  "[]"
+	  DOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  DGainOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  DProdOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  NOutMin		  "[]"
+	  NOutMax		  "[]"
+	  NOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  NGainOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  NProdOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  KbOutMin		  "[]"
+	  KbOutMax		  "[]"
+	  KbOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  KtOutMin		  "[]"
+	  KtOutMax		  "[]"
+	  KtOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  IntegratorOutMin	  "[]"
+	  IntegratorOutMax	  "[]"
+	  IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+	  FilterOutMin		  "[]"
+	  FilterOutMax		  "[]"
+	  FilterOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumOutMin		  "[]"
+	  SumOutMax		  "[]"
+	  SumOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI1OutMin		  "[]"
+	  SumI1OutMax		  "[]"
+	  SumI1OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI2OutMin		  "[]"
+	  SumI2OutMax		  "[]"
+	  SumI2OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI3OutMin		  "[]"
+	  SumI3OutMax		  "[]"
+	  SumI3OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumDOutMin		  "[]"
+	  SumDOutMax		  "[]"
+	  SumDOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumAccumDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI1AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI2AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumI3AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumDAccumDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturationOutMin	  "[]"
+	  SaturationOutMax	  "[]"
+	  SaturationOutDataTypeStr "Inherit: Same as input"
+	  IntegratorContinuousStateAttributes "''"
+	  IntegratorStateMustResolveToSignalObject off
+	  IntegratorRTWStateStorageClass "Auto"
+	  FilterContinuousStateAttributes "''"
+	  FilterStateMustResolveToSignalObject off
+	  FilterRTWStateStorageClass "Auto"
+	  DifferentiatorICPrevScaledInput "0"
+	  DifferentiatorOutMin	  "[]"
+	  DifferentiatorOutMax	  "[]"
+	  DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  "755"
+	  Position		  [665, 167, 725, 403]
+	  ZOrder		  309
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  SID			  "750"
+	  Position		  [790, 278, 820, 292]
+	  ZOrder		  302
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "cloop"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Error"
+	  SrcPort		  1
+	  Points		  [13, 0]
+	  Branch {
+	    ZOrder		    17
+	    Points		    [0, -115]
+	    DstBlock		    "ControlError"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    16
+	    DstBlock		    "Discrete PID Controller"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Discrete PID Controller"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "EnableNoise"
+      SID		      "758"
+      Position		      [825, 270, 855, 300]
+      ZOrder		      156
+      Gain		      "zeros(7,1)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IO"
+      SID		      "470"
+      Ports		      []
+      Position		      [1195, 72, 1310, 188]
+      ZOrder		      -3
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"IO"
+	Location		[0, 24, 1920, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  From
+	  Name			  "ControlEffort"
+	  SID			  "1146"
+	  Position		  [55, 360, 180, 420]
+	  ZOrder		  308
+	  GotoTag		  "PL_ControlEffort"
+	}
+	Block {
 	  BlockType		  Demux
 	  Name			  "Demux"
 	  SID			  "486"
@@ -1203,15 +1509,6 @@ Model {
 	  ShowName		  off
 	  Outputs		  "7"
 	  DisplayOption		  "bar"
-	}
-	Block {
-	  BlockType		  From
-	  Name			  "From"
-	  SID			  "485"
-	  Position		  [95, 368, 180, 412]
-	  ZOrder		  141
-	  GotoTag		  "ControlEffort"
-	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  From
@@ -3688,7 +3985,7 @@ Model {
 	      Position		      [800, 0, 915, 840]
 	      ZOrder		      253
 	      BackgroundColor	      "orange"
-	      LibraryVersion	      "1.32"
+	      LibraryVersion	      "1.30"
 	      SourceBlock	      "SOEM_EtherCAT_Lib/ec_TU_ES_30"
 	      SourceType	      ""
 	      ContentPreviewEnabled   off
@@ -3712,7 +4009,7 @@ Model {
 	      ZOrder		      252
 	      ForegroundColor	      "red"
 	      BackgroundColor	      "yellow"
-	      LibraryVersion	      "1.32"
+	      LibraryVersion	      "1.30"
 	      SourceBlock	      "SOEM_EtherCAT_Lib/ec_TU_ES_30"
 	      SourceType	      ""
 	      ContentPreviewEnabled   off
@@ -3735,7 +4032,7 @@ Model {
 	      Position		      [1410, 0, 1525, 840]
 	      ZOrder		      258
 	      BackgroundColor	      "orange"
-	      LibraryVersion	      "1.32"
+	      LibraryVersion	      "1.30"
 	      SourceBlock	      "SOEM_EtherCAT_Lib/ec_TU_ES_30"
 	      SourceType	      ""
 	      ContentPreviewEnabled   off
@@ -7626,8 +7923,8 @@ Model {
 	  ShowName		  off
 	}
 	Line {
-	  ZOrder		  36
-	  SrcBlock		  "From"
+	  ZOrder		  118
+	  SrcBlock		  "ControlEffort"
 	  SrcPort		  1
 	  DstBlock		  "Demux"
 	  DstPort		  1
@@ -7877,11 +8174,160 @@ Model {
     }
     Block {
       BlockType		      SubSystem
+      Name		      "Logic"
+      SID		      "770"
+      Ports		      []
+      Position		      [1020, 72, 1135, 188]
+      ZOrder		      162
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Logic"
+	Location		[-10, 24, 1457, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Chart"
+	  SID			  "1168"
+	  Ports			  []
+	  Position		  [435, 209, 935, 721]
+	  ZOrder		  322
+	  ErrorFcn		  "Stateflow.Translate.translate"
+	  PermitHierarchicalResolution "ExplicitOnly"
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  SFBlockType		  "Chart"
+	  Variant		  off
+	  System {
+	    Name		    "Chart"
+	    Location		    [-10, 24, 1457, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "80"
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      SID		      "1168::78"
+	      Ports		      [1, 1]
+	      Position		      [270, 100, 320, 140]
+	      ZOrder		      58
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      " Ground "
+	      SID		      "1168::80"
+	      Position		      [20, 111, 40, 129]
+	      ZOrder		      60
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      SID		      "1168::77"
+	      Tag		      "Stateflow S-Function sergio_arm 3"
+	      Ports		      [1, 1]
+	      Position		      [180, 100, 230, 140]
+	      ZOrder		      57
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[1 1]"
+	      SFunctionDeploymentMode off
+	      EnableBusSupport	      off
+	      SFcnIsStateOwnerBlock   off
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      SID		      "1168::79"
+	      Position		      [460, 111, 480, 129]
+	      ZOrder		      59
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      " Ground "
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "ControlEffort"
+	  SID			  "1145"
+	  Position		  [260, 263, 345, 307]
+	  ZOrder		  307
+	  GotoTag		  "PL_ControlEffort"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "ControlError"
+	  SID			  "1149"
+	  Position		  [260, 353, 345, 397]
+	  ZOrder		  313
+	  GotoTag		  "CO_ControlError"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "ROS_UIBUS"
+	  SID			  "1160"
+	  Position		  [575, 83, 660, 127]
+	  ZOrder		  321
+	  GotoTag		  "ROS_UIBUS"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "cloop"
+	  SID			  "777"
+	  Position		  [985, 373, 1070, 417]
+	  ZOrder		  153
+	  GotoTag		  "IO_cloop"
+	  TagVisibility		  "global"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
       Name		      "Plant"
       SID		      "492"
-      Ports		      [0, 1]
-      Position		      [845, 302, 1045, 408]
+      Ports		      [1, 1]
+      Position		      [1095, 432, 1295, 538]
       ZOrder		      -7
+      BackgroundColor	      "blue"
       RequestExecContextInheritance off
       Variant		      off
       System {
@@ -7900,12 +8346,21 @@ Model {
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
 	Block {
-	  BlockType		  Constant
-	  Name			  "Constant"
-	  SID			  "491"
-	  Position		  [165, 145, 195, 175]
-	  ZOrder		  146
-	  Value			  "[0, 0, 0, 0, 0, 0, 0]"
+	  BlockType		  Inport
+	  Name			  "In"
+	  SID			  "751"
+	  Position		  [125, 153, 155, 167]
+	  ZOrder		  305
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "ControlEffort"
+	  SID			  "488"
+	  Position		  [265, 138, 350, 182]
+	  ZOrder		  145
+	  GotoTag		  "PL_ControlEffort"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  From
@@ -7913,66 +8368,738 @@ Model {
 	  SID			  "494"
 	  Position		  [425, 133, 510, 177]
 	  ZOrder		  147
-	  GotoTag		  "Position"
+	  GotoTag		  "IO_Position"
 	  TagVisibility		  "global"
 	}
 	Block {
-	  BlockType		  Goto
-	  Name			  "Goto"
-	  SID			  "488"
-	  Position		  [265, 138, 350, 182]
-	  ZOrder		  145
-	  GotoTag		  "ControlEffort"
-	  TagVisibility		  "global"
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  "742"
+	  Position		  [585, 140, 615, 170]
+	  ZOrder		  303
+	  Gain			  "eye(7)"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  SID			  "743"
+	  Position		  [195, 145, 225, 175]
+	  ZOrder		  304
+	  Gain			  "eye(7)"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "out"
 	  SID			  "496"
-	  Position		  [585, 148, 615, 162]
+	  Position		  [710, 148, 740, 162]
 	  ZOrder		  302
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  ZOrder		  15
-	  SrcBlock		  "Constant"
+	  ZOrder		  19
+	  SrcBlock		  "In"
 	  SrcPort		  1
-	  DstBlock		  "Goto"
+	  DstBlock		  "Gain1"
 	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  16
 	  SrcBlock		  "From"
 	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
 	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "ControlEffort"
 	  DstPort		  1
 	}
       }
     }
     Block {
+      BlockType		      SubSystem
+      Name		      "ROS"
+      SID		      "1150"
+      Ports		      []
+      Position		      [840, 72, 955, 188]
+      ZOrder		      163
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"ROS"
+	Location		[0, 24, 1920, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  "1154"
+	  Ports			  [4, 1]
+	  Position		  [700, 210, 710, 595]
+	  ZOrder		  314
+	  ShowName		  off
+	  Inputs		  "4"
+	  DisplayOption		  "bar"
+	  InheritFromInputs	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Home"
+	  SID			  "1155"
+	  Position		  [580, 245, 610, 275]
+	  ZOrder		  315
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Reset"
+	  SID			  "1158"
+	  Position		  [580, 530, 610, 560]
+	  ZOrder		  318
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Start"
+	  SID			  "1156"
+	  Position		  [580, 340, 610, 370]
+	  ZOrder		  316
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Stop"
+	  SID			  "1157"
+	  Position		  [580, 435, 610, 465]
+	  ZOrder		  317
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "UIBUS"
+	  SID			  "1159"
+	  Position		  [800, 383, 885, 427]
+	  ZOrder		  319
+	  GotoTag		  "ROS_UIBUS"
+	  TagVisibility		  "global"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Home"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Start"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Stop"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Reset"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "UIBUS"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      RandomNumber
+      Name		      "Random\nNumber"
+      SID		      "757"
+      Position		      [750, 270, 780, 300]
+      ZOrder		      155
+      Mean		      "[0, 0, 0, 0, 0, 0, 0]"
+      Variance		      "[1, 1, 1, 1, 1, 1, 1]"
+      Seed		      "[0, 0, 0, 0, 0, 0, 0]"
+      SampleTime	      "TUe.Constants.general.Ts"
+    }
+    Block {
       BlockType		      Terminator
       Name		      "Terminator"
       SID		      "497"
-      Position		      [1130, 345, 1150, 365]
+      Position		      [1460, 475, 1480, 495]
       ZOrder		      148
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Traject Generator"
+      SID		      "761"
+      Ports		      [2, 1]
+      Position		      [375, 426, 550, 539]
+      ZOrder		      159
+      BackgroundColor	      "magenta"
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Traject Generator"
+	Location		[0, 24, 1920, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "cloop"
+	  SID			  "762"
+	  Position		  [405, 278, 435, 292]
+	  ZOrder		  306
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pos"
+	  SID			  "763"
+	  Position		  [405, 358, 435, 372]
+	  ZOrder		  307
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  "766"
+	  Position		  [665, 167, 725, 403]
+	  ZOrder		  309
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Traject"
+	  SID			  "764"
+	  Position		  [405, 190, 435, 220]
+	  ZOrder		  311
+	  Value			  "[0, 0, 0, 0, 0, 0, 0]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  SID			  "767"
+	  Position		  [790, 278, 820, 292]
+	  ZOrder		  302
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "cloop"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Traject"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "pos"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      From
+      Name		      "cloop"
+      SID		      "769"
+      Position		      [230, 378, 315, 422]
+      ZOrder		      161
+      GotoTag		      "LO_cloop"
+      TagVisibility	      "global"
     }
     Line {
       ZOrder		      17
       SrcBlock		      "Plant"
       SrcPort		      1
-      DstBlock		      "Terminator"
+      Points		      [49, 0]
+      Branch {
+	ZOrder			41
+	Points			[0, 105; -724, 0]
+	Branch {
+	  ZOrder		  39
+	  Points		  [-286, 0; 0, -80]
+	  DstBlock		  "Traject Generator"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  30
+	  DstBlock		  "Add1"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	ZOrder			26
+	DstBlock		"Terminator"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      20
+      SrcBlock		      "Controller\n"
+      SrcPort		      1
+      Points		      [33, 0; 0, 40]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      21
+      SrcBlock		      "Add"
+      SrcPort		      1
+      DstBlock		      "Plant"
       DstPort		      1
     }
-    Annotation {
-      SID		      "733"
-      Name		      "To do Add interface to Dashboard\nTo do Add stateflow statemachine\nTo do Add Controller"
-      Position		      [237, 5, 387, 43]
-      InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
-      HorizontalAlignment     "left"
-      VerticalAlignment	      "top"
-      ZOrder		      -1
+    Line {
+      ZOrder		      22
+      SrcBlock		      "Random\nNumber"
+      SrcPort		      1
+      DstBlock		      "EnableNoise"
+      DstPort		      1
     }
+    Line {
+      ZOrder		      23
+      SrcBlock		      "EnableNoise"
+      SrcPort		      1
+      Points		      [90, 0]
+      DstBlock		      "Add"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      24
+      SrcBlock		      "Traject Generator"
+      SrcPort		      1
+      DstBlock		      "Add1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      25
+      SrcBlock		      "Add1"
+      SrcPort		      1
+      DstBlock		      "Controller\n"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      31
+      SrcBlock		      "cloop"
+      SrcPort		      1
+      Points		      [19, 0]
+      Branch {
+	ZOrder			37
+	DstBlock		"Controller\n"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			35
+	Points			[0, 55]
+	DstBlock		"Traject Generator"
+	DstPort			1
+      }
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000010
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "sergio_arm"
+    created		    "14-Jan-2017 10:36:45"
+    isLibrary		    0
+    sfVersion		    80000010
+    firstTarget		    19
+  }
+  chart {
+    id			    2
+    machine		    1
+    name		    "Logic/Chart"
+    windowPosition	    [199.5 216.75 417 348.75]
+    viewLimits		    [117.992 1528.992 -12.167 845.833]
+    zoomFactor		    1.333
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 3200 1200 1.25]
+    treeNode		    [0 3 0 0]
+    viewObj		    2
+    visible		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    49
+    decomposition	    SET_CHART
+    chartFileNumber	    3
+    allowGlobalAccessToExportedFunctions 0
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    2
+  }
+  state {
+    id			    3
+    labelString		    "StateMachine"
+    position		    [239 127 205 171]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 7 0 4]
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      panLimits		      [-300.705 1463.045 -200.213 872.287]
+      x1		      137.333
+      y1		      187.333
+      zoomFactor	      1.667
+      pos		      [20.798 20.918 1433.629 891.263]
+    }
+    ssIdNumber		    20
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    1
+    firstTransition	    11
+  }
+  state {
+    id			    4
+    labelString		    "SafetyMonitor"
+    position		    [239 329 202 154]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 10 3 0]
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      panLimits		      [-24 417 -24 349]
+      x1		      20.333
+      y1		      20.333
+      pos		      [47 47 1204 767]
+    }
+    ssIdNumber		    22
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    2
+    firstTransition	    17
+  }
+  state {
+    id			    5
+    labelString		    "Error"
+    position		    [990.5482 450.1677 268 130]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 8 6]
+    subviewer		    3
+    ssIdNumber		    23
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    labelString		    "Operational"
+    position		    [475.2982 638.1677 331 169]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 5 0]
+    subviewer		    3
+    ssIdNumber		    29
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "Idle"
+    position		    [314.2982 75.4177 771 122]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 0 8]
+    subviewer		    3
+    ssIdNumber		    30
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "Homing"
+    position		    [88.0482 318.1677 331 169]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 7 5]
+    subviewer		    3
+    ssIdNumber		    31
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    9
+    labelString		    "LoopClosed\n"
+    position		    [388 453 425 153]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 10 0]
+    subviewer		    4
+    ssIdNumber		    44
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    10
+    labelString		    "LoopBroken"
+    position		    [390 175 420 137]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 0 9]
+    subviewer		    4
+    ssIdNumber		    45
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  transition {
+    id			    11
+    labelString		    ""
+    labelPosition	    [506.298 55.918 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 506.2982 44.4177 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [1 0 -1 0.249 506.2982 75.4177 0 0]
+    }
+    midPoint		    [506.2982 55.9177]
+    chart		    2
+    visible		    0
+    dataLimits		    [503.898 508.698 44.418 75.418]
+    subviewer		    3
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    28
+    linkNode		    [3 0 12]
+  }
+  transition {
+    id			    12
+    labelString		    ""
+    labelPosition	    [373.548 253.793 0 0]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 -0 1 0.9232 373.5482 197.4177 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [1 0 -1 0.8625 373.5482 318.1677 0 0]
+    }
+    midPoint		    [373.5482 253.7927]
+    chart		    2
+    visible		    0
+    dataLimits		    [371.148 375.948 197.418 318.168]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    25
+    linkNode		    [3 11 13]
+  }
+  transition {
+    id			    13
+    labelString		    " UI_Start"
+    labelPosition	    [598.295 413.793 50.297 16]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [3 0 1 0.6317 598.2949 197.4177 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [1 -0 -1 0.3716 598.2949 638.1677 0 0]
+    }
+    midPoint		    [598.2949 413.7927]
+    chart		    2
+    dataLimits		    [595.895 600.695 197.418 638.168]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    49
+    linkNode		    [3 12 14]
+  }
+  transition {
+    id			    14
+    labelString		    "UI_Reset"
+    labelPosition	    [1032.045 320.037 52.984 16]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [1 0 -1 0.3088 1073.2949 450.1677 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [3 0 1 0.1761 949.5449 197.4177 0 0]
+    }
+    midPoint		    [1011.4199 327.7927]
+    chart		    2
+    dataLimits		    [947.145 1073.295 197.418 450.168]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    47
+    linkNode		    [3 13 15]
+  }
+  transition {
+    id			    15
+    labelString		    ""
+    labelPosition	    [390.953 613.261 0 0]
+    fontSize		    12
+    src {
+      id		      8
+      intersection	      [3 0 1 0.1307 375.7949 487.1677 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [4 -1 0 0.5503 475.2982 714.1677 0 0]
+    }
+    midPoint		    [390.953 631.2613]
+    chart		    2
+    visible		    0
+    dataLimits		    [375.795 475.298 487.168 716.568]
+    subviewer		    3
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    27
+    linkNode		    [3 14 16]
+  }
+  transition {
+    id			    16
+    labelString		    ""
+    labelPosition	    [952.841 664.144 0 0]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [2 1 0 0.4327 806.2982 711.2867 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [3 0 1 0.8358 1034.5482 580.1677 0 0]
+    }
+    midPoint		    [952.8405 682.1445]
+    chart		    2
+    visible		    0
+    dataLimits		    [806.298 1036.948 580.168 711.287]
+    subviewer		    3
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    32
+    linkNode		    [3 15 0]
+  }
+  transition {
+    id			    17
+    labelString		    ""
+    labelPosition	    [455 378.5 0 0]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [3 0 1 0.8452 455 312 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [1 -0 -1 0.1576 455 453 0 0]
+    }
+    midPoint		    [455 378.5]
+    chart		    2
+    dataLimits		    [452.6 457.4 312 453]
+    subviewer		    4
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    46
+    linkNode		    [4 0 0]
+  }
+  instance {
+    id			    18
+    machine		    1
+    name		    "Logic/Chart"
+    chart		    2
+  }
+  target {
+    id			    19
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
   }
 }
