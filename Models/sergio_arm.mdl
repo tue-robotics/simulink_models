@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.153"
+    ComputedModelVersion    "1.182"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -59,10 +59,10 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		2
+	Dimension		3
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1886.0, 853.0]
@@ -71,9 +71,18 @@ Model {
 	}
 	Object {
 	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1150"
+	  Extents		  [1886.0, 853.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-39.897571416128358, 20.575000000000273]
+	}
+	Object {
+	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "492"
+	  LoadSaveID		  "1199"
 	  Extents		  [1886.0, 853.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
@@ -82,7 +91,7 @@ Model {
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		7
+	$ObjectID		8
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -111,9 +120,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "root"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jan 14 18:39:58 2017"
-  RTWModifiedTimeStamp	  406319027
-  ModelVersionFormat	  "1.%<AutoIncrement:153>"
+  LastModifiedDate	  "Tue Jan 17 18:11:58 2017"
+  RTWModifiedTimeStamp	  406577515
+  ModelVersionFormat	  "1.%<AutoIncrement:182>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -161,7 +170,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "sergio_arm"
     overrideMode_	    [0.0]
@@ -205,7 +214,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      10
       Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
@@ -213,7 +222,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -253,7 +262,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -293,7 +302,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -339,7 +348,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -442,7 +451,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -490,7 +499,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -509,7 +518,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -537,7 +546,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -628,7 +637,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "1.16.5"
 	      DisabledProps	      []
 	      Description	      ""
@@ -682,7 +691,7 @@ Model {
 	    }
 	    Simulink.ERTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      20
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -828,7 +837,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -867,7 +876,7 @@ Model {
 	  CovStopTime		  0
 	}
 	CoderTarget.SettingsController {
-	  $ObjectID		  21
+	  $ObjectID		  22
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Coder Target"
@@ -935,11 +944,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    9
+    $ObjectID		    10
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    22
+    $ObjectID		    23
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1020,6 +1029,9 @@ Model {
       CheckOORBitShift	      off
     }
     Block {
+      BlockType		      BusAssignment
+    }
+    Block {
       BlockType		      BusCreator
       DisplayOption	      "none"
       OutDataTypeStr	      "Inherit: auto"
@@ -1096,6 +1108,20 @@ Model {
       Floating		      off
       Lockdown		      off
       SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+      DisallowConstTsAndPrmTs off
+      PortDimensions	      "1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "double"
+      Interpolate	      on
     }
     Block {
       BlockType		      From
@@ -1332,7 +1358,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1193"
+    SIDHighWatermark	    "1210"
     Block {
       BlockType		      Sum
       Name		      "Add"
@@ -1611,7 +1637,7 @@ Model {
       Name		      "IO"
       SID		      "470"
       Ports		      []
-      Position		      [1255, 72, 1370, 188]
+      Position		      [1215, 72, 1330, 188]
       ZOrder		      -3
       BackgroundColor	      "orange"
       RequestExecContextInheritance off
@@ -8347,14 +8373,14 @@ Model {
       Name		      "Logic"
       SID		      "770"
       Ports		      []
-      Position		      [1020, 72, 1135, 188]
+      Position		      [1027, 72, 1142, 188]
       ZOrder		      162
       BackgroundColor	      "yellow"
       RequestExecContextInheritance off
       Variant		      off
       System {
 	Name			"Logic"
-	Location		[58, 24, 1887, 1056]
+	Location		[0, 24, 1920, 1056]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8369,11 +8395,11 @@ Model {
 	ZoomFactor		"100"
 	Block {
 	  BlockType		  Reference
-	  Name			  "Average"
-	  SID			  "1179"
+	  Name			  "AverageContinous"
+	  SID			  "1194"
 	  Ports			  [1, 1]
-	  Position		  [280, 575, 330, 625]
-	  ZOrder		  329
+	  Position		  [455, 620, 505, 670]
+	  ZOrder		  336
 	  LibraryVersion	  "1.588"
 	  SourceBlock		  "dspstat3/Moving\nAverage"
 	  SourceType		  "dsp.MovingAverage"
@@ -8384,11 +8410,27 @@ Model {
 	  SimulateUsing		  "Code generation"
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "AveragePeak"
+	  SID			  "1179"
+	  Ports			  [1, 1]
+	  Position		  [455, 450, 505, 500]
+	  ZOrder		  329
+	  LibraryVersion	  "1.588"
+	  SourceBlock		  "dspstat3/Moving\nAverage"
+	  SourceType		  "dsp.MovingAverage"
+	  Method		  "Sliding window"
+	  SpecifyWindowLength	  on
+	  WindowLength		  "TUe.Constants.general.Fs/200"
+	  ForgettingFactor	  "0.9"
+	  SimulateUsing		  "Code generation"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "Chart"
 	  SID			  "1168"
-	  Ports			  [2, 2, 0, 1]
-	  Position		  [465, 215, 965, 730]
+	  Ports			  [3, 3, 0, 1]
+	  Position		  [640, 217, 1140, 733]
 	  ZOrder		  322
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -8398,7 +8440,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Chart"
-	    Location		    [58, 24, 1887, 1056]
+	    Location		    [0, 24, 1920, 1056]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -8411,7 +8453,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "87"
+	    SIDHighWatermark	    "89"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "ControlError"
@@ -8422,7 +8464,7 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Inport
-	      Name		      "ControlEffort"
+	      Name		      "ControlEffortPeak"
 	      SID		      "1168::84"
 	      Position		      [20, 136, 40, 154]
 	      ZOrder		      64
@@ -8430,11 +8472,20 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Inport
+	      Name		      "ControlEffortContinous"
+	      SID		      "1168::88"
+	      Position		      [20, 171, 40, 189]
+	      ZOrder		      68
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
 	      BlockType		      TriggerPort
 	      Name		      "input events"
 	      SID		      "1168::82"
 	      Ports		      [0, 1]
-	      Position		      [20, 171, 40, 189]
+	      Position		      [20, 206, 40, 224]
 	      ZOrder		      62
 	      TriggerType	      "either"
 	      VariantControl	      "Variant"
@@ -8446,7 +8497,7 @@ Model {
 	      Name		      " Demux "
 	      SID		      "1168::78"
 	      Ports		      [1, 1]
-	      Position		      [270, 230, 320, 270]
+	      Position		      [270, 245, 320, 285]
 	      ZOrder		      58
 	      Outputs		      "1"
 	    }
@@ -8455,17 +8506,17 @@ Model {
 	      Name		      " SFunction "
 	      SID		      "1168::77"
 	      Tag		      "Stateflow S-Function sergio_arm 3"
-	      Ports		      [3, 3]
-	      Position		      [180, 105, 230, 185]
+	      Ports		      [4, 4]
+	      Position		      [180, 107, 230, 208]
 	      ZOrder		      57
 	      FunctionName	      "sf_sfun"
-	      PortCounts	      "[3 3]"
+	      PortCounts	      "[4 4]"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      on
 	      SFcnIsStateOwnerBlock   off
 	      Port {
 		PortNumber		2
-		Name			"cloop"
+		Name			"Cloop"
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
@@ -8475,17 +8526,23 @@ Model {
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
+	      Port {
+		PortNumber		4
+		Name			"ErrorState"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
 	    }
 	    Block {
 	      BlockType		      Terminator
 	      Name		      " Terminator "
 	      SID		      "1168::79"
-	      Position		      [460, 241, 480, 259]
+	      Position		      [460, 256, 480, 274]
 	      ZOrder		      59
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "cloop"
+	      Name		      "Cloop"
 	      SID		      "1168::86"
 	      Position		      [460, 101, 480, 119]
 	      ZOrder		      66
@@ -8500,32 +8557,48 @@ Model {
 	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ErrorState"
+	      SID		      "1168::89"
+	      Position		      [460, 171, 480, 189]
+	      ZOrder		      69
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
 	    Line {
-	      ZOrder		      46
+	      ZOrder		      61
 	      SrcBlock		      "ControlError"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      47
-	      SrcBlock		      "ControlEffort"
+	      ZOrder		      62
+	      SrcBlock		      "ControlEffortPeak"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      2
 	    }
 	    Line {
-	      Name		      "cloop"
-	      ZOrder		      48
+	      ZOrder		      63
+	      SrcBlock		      "ControlEffortContinous"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "Cloop"
+	      ZOrder		      64
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      2
-	      DstBlock		      "cloop"
+	      DstBlock		      "Cloop"
 	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "State"
-	      ZOrder		      49
+	      ZOrder		      65
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      3
@@ -8533,21 +8606,30 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      50
+	      Name		      "ErrorState"
+	      ZOrder		      66
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "ErrorState"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      67
 	      SrcBlock		      " Demux "
 	      SrcPort		      1
 	      DstBlock		      " Terminator "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      51
+	      ZOrder		      68
 	      SrcBlock		      "input events"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
-	      DstPort		      3
+	      DstPort		      4
 	    }
 	    Line {
-	      ZOrder		      52
+	      ZOrder		      69
 	      SrcBlock		      " SFunction "
 	      SrcPort		      1
 	      DstBlock		      " Demux "
@@ -8559,7 +8641,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Cloop"
 	  SID			  "777"
-	  Position		  [1035, 325, 1230, 365]
+	  Position		  [1200, 285, 1395, 325]
 	  ZOrder		  153
 	  GotoTag		  "LO_Cloop"
 	  TagVisibility		  "global"
@@ -8568,7 +8650,7 @@ Model {
 	  BlockType		  From
 	  Name			  "ControlEffort"
 	  SID			  "1145"
-	  Position		  [-60, 580, 135, 620]
+	  Position		  [115, 455, 310, 495]
 	  ZOrder		  307
 	  GotoTag		  "PL_ControlEffort"
 	  TagVisibility		  "global"
@@ -8577,7 +8659,7 @@ Model {
 	  BlockType		  From
 	  Name			  "ControlError"
 	  SID			  "1149"
-	  Position		  [-60, 325, 135, 365]
+	  Position		  [115, 285, 310, 325]
 	  ZOrder		  313
 	  GotoTag		  "CO_ControlError"
 	  TagVisibility		  "global"
@@ -8587,7 +8669,7 @@ Model {
 	  Name			  "Delay"
 	  SID			  "1184"
 	  Ports			  [1, 1]
-	  Position		  [405, 328, 440, 362]
+	  Position		  [580, 288, 615, 322]
 	  ZOrder		  334
 	  InputPortMap		  "u0"
 	  DelayLength		  "1"
@@ -8598,17 +8680,37 @@ Model {
 	  Name			  "Delay1"
 	  SID			  "1185"
 	  Ports			  [1, 1]
-	  Position		  [405, 583, 440, 617]
+	  Position		  [580, 458, 615, 492]
 	  ZOrder		  335
 	  InputPortMap		  "u0"
 	  DelayLength		  "1"
 	  InitialCondition	  "0"
 	}
 	Block {
+	  BlockType		  Delay
+	  Name			  "Delay2"
+	  SID			  "1195"
+	  Ports			  [1, 1]
+	  Position		  [580, 628, 615, 662]
+	  ZOrder		  337
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "ErrorState"
+	  SID			  "1197"
+	  Position		  [1210, 625, 1405, 665]
+	  ZOrder		  338
+	  GotoTag		  "LO_ErrorState"
+	  TagVisibility		  "global"
+	}
+	Block {
 	  BlockType		  SignalSpecification
 	  Name			  "Signal Specification"
 	  SID			  "1183"
-	  Position		  [165, 588, 245, 612]
+	  Position		  [340, 463, 420, 487]
 	  ZOrder		  332
 	  OutDataTypeStr	  "double"
 	  Dimensions		  "7"
@@ -8617,7 +8719,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "State"
 	  SID			  "1180"
-	  Position		  [1035, 580, 1230, 620]
+	  Position		  [1210, 455, 1405, 495]
 	  ZOrder		  330
 	  GotoTag		  "LO_State"
 	  TagVisibility		  "global"
@@ -8627,7 +8729,7 @@ Model {
 	  Name			  "Trigger"
 	  SID			  "1169"
 	  Ports			  [0, 1]
-	  Position		  [435, 55, 630, 145]
+	  Position		  [610, 55, 805, 145]
 	  ZOrder		  -6
 	  RequestExecContextInheritance	off
 	  Variant		  off
@@ -8809,7 +8911,7 @@ Model {
 	}
 	Line {
 	  ZOrder		  11
-	  SrcBlock		  "Average"
+	  SrcBlock		  "AveragePeak"
 	  SrcPort		  1
 	  DstBlock		  "Delay1"
 	  DstPort		  1
@@ -8819,13 +8921,6 @@ Model {
 	  SrcBlock		  "Chart"
 	  SrcPort		  2
 	  DstBlock		  "State"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  14
-	  SrcBlock		  "Signal Specification"
-	  SrcPort		  1
-	  DstBlock		  "Average"
 	  DstPort		  1
 	}
 	Line {
@@ -8842,6 +8937,64 @@ Model {
 	  DstBlock		  "Chart"
 	  DstPort		  2
 	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "AverageContinous"
+	  SrcPort		  1
+	  DstBlock		  "Delay2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Signal Specification"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    ZOrder		    26
+	    Points		    [0, 170]
+	    DstBlock		    "AverageContinous"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    25
+	    DstBlock		    "AveragePeak"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  24
+	  SrcBlock		  "Delay2"
+	  SrcPort		  1
+	  DstBlock		  "Chart"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  29
+	  SrcBlock		  "Chart"
+	  SrcPort		  3
+	  DstBlock		  "ErrorState"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "1196"
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Liberation Sans'; font-size:10px; font-weight:400; font-style:normal;\">\n<p s"
+	  "tyle=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+	  "line-height:100%;\">To do:</p>\n<ol style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0p"
+	  "x; -qt-list-indent: 1; -qt-list-number-suffix: ')';\"><li style=\" margin-top:0px; margin-bottom:0px; margin-left:1"
+	  "2px; margin-right:0px; -qt-block-indent:0; text-indent:0px; -qt-user-state:15; line-height:100%;\">Test Continous C"
+	  "ontrolEffort safety</li>\n<li style=\" margin-top:0px; margin-bottom:0px; margin-left:12px; margin-right:0px; -qt-b"
+	  "lock-indent:0; text-indent:0px; line-height:100%;\">Test Peak ControlEffort safety</li></ol></body></html>"
+	  Position		  [1314, 43, 1522, 81]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
+	  ZOrder		  -1
+	}
       }
     }
     Block {
@@ -8857,7 +9010,7 @@ Model {
       System {
 	Name			"Plant"
 	Location		[0, 24, 1920, 1056]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -8970,7 +9123,7 @@ Model {
       System {
 	Name			"ROS"
 	Location		[0, 24, 1920, 1056]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -8983,11 +9136,35 @@ Model {
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
 	Block {
+	  BlockType		  Reference
+	  Name			  "Blank Message"
+	  SID			  "1200"
+	  Ports			  [0, 1]
+	  Position		  [1190, 227, 1320, 293]
+	  ZOrder		  336
+	  LibraryVersion	  "1.269"
+	  SourceBlock		  "robotlib/Blank Message"
+	  SourceType		  "ROS Blank Message"
+	  SourceLibraryInfo	  "This block requires Robotics System Toolbox"
+	  ContentPreviewEnabled	  off
+	  messageType		  "std_msgs/Float64"
+	  SampleTime		  "inf"
+	}
+	Block {
+	  BlockType		  BusAssignment
+	  Name			  "Bus\nAssignment"
+	  SID			  "1198"
+	  Ports			  [2, 1]
+	  Position		  [1545, 351, 1590, 389]
+	  ZOrder		  334
+	  AssignedSignals	  "Data"
+	}
+	Block {
 	  BlockType		  BusCreator
 	  Name			  "Bus\nCreator"
 	  SID			  "1154"
 	  Ports			  [4, 1]
-	  Position		  [765, 35, 775, 420]
+	  Position		  [835, 175, 845, 560]
 	  ZOrder		  314
 	  ShowName		  off
 	  Inputs		  "4"
@@ -8998,7 +9175,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From"
 	  SID			  "1181"
-	  Position		  [1120, 210, 1315, 250]
+	  Position		  [1190, 360, 1385, 400]
 	  ZOrder		  332
 	  ForegroundColor	  "red"
 	  BackgroundColor	  "yellow"
@@ -9009,7 +9186,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Home"
 	  SID			  "1155"
-	  Position		  [645, 70, 675, 100]
+	  Position		  [715, 210, 745, 240]
 	  ZOrder		  315
 	  Value			  "0"
 	  Port {
@@ -9020,10 +9197,27 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Publish"
+	  SID			  "1199"
+	  Ports			  [1]
+	  Position		  [1645, 337, 1775, 403]
+	  ZOrder		  335
+	  LibraryVersion	  "1.269"
+	  SourceBlock		  "robotlib/Publish"
+	  SourceType		  "ROS Publish"
+	  SourceLibraryInfo	  "This block requires Robotics System Toolbox"
+	  ContentPreviewEnabled	  off
+	  topicSource		  "Specify your own"
+	  topic			  "/sergio/LogicState"
+	  messageType		  "std_msgs/Float64"
+	  messageQueueLength	  "1"
+	}
+	Block {
 	  BlockType		  Constant
 	  Name			  "Reset"
 	  SID			  "1158"
-	  Position		  [645, 355, 675, 385]
+	  Position		  [715, 495, 745, 525]
 	  ZOrder		  318
 	  Value			  "0"
 	  Port {
@@ -9037,7 +9231,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Start"
 	  SID			  "1156"
-	  Position		  [645, 165, 675, 195]
+	  Position		  [715, 305, 745, 335]
 	  ZOrder		  316
 	  Value			  "0"
 	  Port {
@@ -9051,7 +9245,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Stop"
 	  SID			  "1157"
-	  Position		  [645, 260, 675, 290]
+	  Position		  [715, 400, 745, 430]
 	  ZOrder		  317
 	  Value			  "0"
 	  Port {
@@ -9062,17 +9256,92 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Subscribe"
+	  SID			  "1201"
+	  Ports			  [0, 2]
+	  Position		  [145, 209, 295, 356]
+	  ZOrder		  337
+	  LibraryVersion	  "1.269"
+	  SourceBlock		  "robotlib/Subscribe"
+	  SourceType		  "ROS Subscribe"
+	  SourceLibraryInfo	  "This block requires Robotics System Toolbox"
+	  ContentPreviewEnabled	  off
+	  topicSource		  "Specify your own"
+	  topic			  "/sergio/dashboard_commands"
+	  messageType		  "geometry_msgs/Point"
+	  sampleTime		  "-1"
+	  messageQueueLength	  "1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  SID			  "1203"
+	  Ports			  [1, 1, 1]
+	  Position		  [350, 282, 480, 358]
+	  ZOrder		  -10
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [0, 24, 1920, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "80"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      SID		      "1206"
+	      Position		      [30, 133, 60, 147]
+	      ZOrder		      340
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "1205"
+	      Ports		      []
+	      Position		      [120, 20, 140, 40]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      SID		      "1204"
+	      Position		      [220, 133, 250, 147]
+	      ZOrder		      339
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
-	  SID			  "1182"
-	  Position		  [1430, 220, 1450, 240]
-	  ZOrder		  333
+	  SID			  "1207"
+	  Position		  [535, 310, 555, 330]
+	  ZOrder		  340
 	}
 	Block {
 	  BlockType		  Goto
 	  Name			  "UIbus"
 	  SID			  "1159"
-	  Position		  [865, 208, 950, 252]
+	  Position		  [935, 348, 1020, 392]
 	  ZOrder		  319
 	  GotoTag		  "ROS_UIbus"
 	  TagVisibility		  "global"
@@ -9121,11 +9390,60 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  11
+	  ZOrder		  13
 	  SrcBlock		  "From"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nAssignment"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Bus\nAssignment"
+	  SrcPort		  1
+	  DstBlock		  "Publish"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Blank Message"
+	  SrcPort		  1
+	  Points		  [188, 0; 0, 100]
+	  DstBlock		  "Bus\nAssignment"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "Subscribe"
+	  SrcPort		  2
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "Subscribe"
+	  SrcPort		  1
+	  Points		  [115, 0]
+	  DstBlock		  "Subsystem"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Subsystem"
 	  SrcPort		  1
 	  DstBlock		  "Terminator"
 	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "1210"
+	  Name			  "To Do:\n- Test listening to dashboard commands by publishing it on a dashboard2 topic\n- Implement demuxi"
+	  "ng the dashboard command into signals in ROS_UIbus"
+	  Position		  [1024, 623, 1372, 661]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -1
 	}
       }
     }
@@ -9339,14 +9657,14 @@ Stateflow {
     created		    "14-Jan-2017 10:36:45"
     isLibrary		    0
     sfVersion		    80000010
-    firstTarget		    36
+    firstTarget		    49
   }
   chart {
     id			    2
     machine		    1
     name		    "Logic/Chart"
-    windowPosition	    [58 24 1829 1032]
-    viewLimits		    [117.992 1890.992 -12.167 839.833]
+    windowPosition	    [0 24 1920 1032]
+    viewLimits		    [117.992 2037.992 -12.167 1043.833]
     zoomFactor		    1.333
     transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
@@ -9355,7 +9673,7 @@ Stateflow {
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
-    ssIdHighWaterMark	    82
+    ssIdHighWaterMark	    101
     decomposition	    SET_CHART
     chartFileNumber	    3
     allowGlobalAccessToExportedFunctions 0
@@ -9363,8 +9681,8 @@ Stateflow {
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
     actionLanguage	    2
-    firstData		    23
-    firstEvent		    29
+    firstData		    33
+    firstEvent		    42
   }
   state {
     id			    3
@@ -9376,7 +9694,7 @@ Stateflow {
     superState		    SUBCHART
     subviewer		    2
     subviewS {
-      panLimits		      [-189.372 2026.878 -137.463 927.537]
+      panLimits		      [-189.372 1696.628 8.537 867.537]
       x1		      287.333
       y1		      219.333
       zoomFactor	      1.667
@@ -9386,9 +9704,7 @@ Stateflow {
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    1
-    eml {
-    }
-    firstTransition	    11
+    firstTransition	    12
   }
   state {
     id			    4
@@ -9396,24 +9712,22 @@ Stateflow {
     position		    [239 329 202 154]
     fontSize		    12
     chart		    2
-    treeNode		    [2 0 3 0]
+    treeNode		    [2 11 3 0]
     superState		    SUBCHART
     subviewer		    2
     subviewS {
-      panLimits		      [332.75 1219.25 138 564]
-      x1		      20.333
+      panLimits		      [34.75 1920.75 138 997]
+      x1		      288.333
       y1		      20.333
       zoomFactor	      0.667
-      pos		      [47 47 1204 767]
+      pos		      [20.894 47 1498.106 767]
     }
     ssIdNumber		    22
     type		    AND_STATE
     decomposition	    CLUSTER_STATE
     executionOrder	    2
-    eml {
-    }
-    firstTransition	    18
-    firstJunction	    16
+    firstTransition	    22
+    firstJunction	    17
   }
   state {
     id			    5
@@ -9426,8 +9740,6 @@ Stateflow {
     ssIdNumber		    23
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    6
@@ -9440,8 +9752,6 @@ Stateflow {
     ssIdNumber		    29
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    7
@@ -9454,8 +9764,6 @@ Stateflow {
     ssIdNumber		    30
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    8
@@ -9468,12 +9776,10 @@ Stateflow {
     ssIdNumber		    31
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
   }
   state {
     id			    9
-    labelString		    "LoopBroken\nentry: cloop = false;"
+    labelString		    "LoopBroken\nentry: Cloop = false;"
     position		    [325.6283 62.1677 963.75 513.75]
     fontSize		    12
     chart		    2
@@ -9482,13 +9788,12 @@ Stateflow {
     ssIdNumber		    78
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
-    firstTransition	    21
+    firstTransition	    30
+    firstJunction	    29
   }
   state {
     id			    10
-    labelString		    "LoopClosed\nentry: cloop = true;"
+    labelString		    "LoopClosed\nentry: Cloop = true;"
     position		    [325.6283 595.787 980 325]
     fontSize		    12
     chart		    2
@@ -9497,11 +9802,23 @@ Stateflow {
     ssIdNumber		    77
     type		    OR_STATE
     decomposition	    CLUSTER_STATE
-    eml {
-    }
+  }
+  state {
+    id			    11
+    labelString		    "ErrorState will be resetted to zero by Statemachine "
+    position		    [872.75 508 275.875 16]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 0 0]
+    superState		    GROUPED
+    isNoteBox		    1
+    subviewer		    4
+    ssIdNumber		    98
+    type		    GROUP_STATE
+    decomposition	    CLUSTER_STATE
   }
   transition {
-    id			    11
+    id			    12
     labelString		    ""
     labelPosition	    [656.878 70.102 0 0]
     fontSize		    12
@@ -9522,10 +9839,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    28
-    linkNode		    [3 0 12]
+    linkNode		    [3 0 13]
   }
   transition {
-    id			    12
+    id			    13
     labelString		    " UI_Start"
     labelPosition	    [748.295 445.793 50.297 16]
     fontSize		    12
@@ -9547,10 +9864,10 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    49
-    linkNode		    [3 11 13]
+    linkNode		    [3 12 14]
   }
   transition {
-    id			    13
+    id			    14
     labelString		    " UI_Stop"
     labelPosition	    [848.545 453.793 48.656 16]
     fontSize		    12
@@ -9572,10 +9889,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    54
-    linkNode		    [3 12 14]
+    linkNode		    [3 13 15]
   }
   transition {
-    id			    14
+    id			    15
     labelString		    ""
     labelPosition	    [498.372 639.402 0 0]
     fontSize		    12
@@ -9597,10 +9914,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    53
-    linkNode		    [3 13 15]
+    linkNode		    [3 14 16]
   }
   transition {
-    id			    15
+    id			    16
     labelString		    "BreakLoopEvt"
     labelPosition	    [1058.297 627.388 78.344 16]
     fontSize		    12
@@ -9622,101 +9939,264 @@ Stateflow {
     }
     executionOrder	    2
     ssIdNumber		    56
-    linkNode		    [3 14 0]
-  }
-  junction {
-    id			    16
-    position		    [657 351 7]
-    chart		    2
-    subviewer		    4
-    ssIdNumber		    74
-    type		    CONNECTIVE_JUNCTION
-    linkNode		    [4 0 17]
+    linkNode		    [3 15 0]
   }
   junction {
     id			    17
-    position		    [895 351 7]
+    position		    [830.75 273 7]
+    chart		    2
+    subviewer		    4
+    ssIdNumber		    88
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 0 18]
+  }
+  junction {
+    id			    18
+    position		    [828.8938 364.0383 7]
+    chart		    2
+    visible		    0
+    subviewer		    4
+    ssIdNumber		    92
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 17 19]
+  }
+  junction {
+    id			    19
+    position		    [1152.75 364.0383 7]
+    chart		    2
+    visible		    0
+    subviewer		    4
+    ssIdNumber		    87
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 18 20]
+  }
+  junction {
+    id			    20
+    position		    [1411 364.0383 7]
     chart		    2
     subviewer		    4
     ssIdNumber		    79
     type		    CONNECTIVE_JUNCTION
-    linkNode		    [4 16 0]
+    linkNode		    [4 19 21]
   }
-  transition {
-    id			    18
-    labelString		    "[any(ControlEffort>ControlEffortBound)]"
-    labelPosition	    [437.841 240.778 212.219 16]
-    fontSize		    12
-    src {
-      intersection	      [0 0.9408 0.339 0 324 231 0 0]
-    }
-    dst {
-      id		      16
-      intersection	      [4 -0.9408 -0.339 0 650.4145 348.6269 0 0]
-    }
-    midPoint		    [483.4442 288.4574]
+  junction {
+    id			    21
+    position		    [828.8938 463.0383 7]
     chart		    2
     visible		    0
-    dataLimits		    [324 650.415 231 348.627]
+    subviewer		    4
+    ssIdNumber		    95
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [4 20 0]
+  }
+  transition {
+    id			    22
+    labelString		    "[any(ControlError>ControlErrorBound)]"
+    labelPosition	    [507.814 244.258 208.188 16]
+    fontSize		    12
+    src {
+      intersection	      [0 1 0 0 393.75 273 0 0]
+    }
+    dst {
+      id		      17
+      intersection	      [4 -1 -0 0 823.75 273 0 0]
+    }
+    midPoint		    [604.75 273]
+    chart		    2
+    visible		    0
+    dataLimits		    [393.75 823.75 270.6 275.4]
     subviewer		    4
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    75
-    linkNode		    [4 0 19]
+    linkNode		    [4 0 23]
   }
   transition {
-    id			    19
-    labelString		    "{BreakLoopEvt}"
-    labelPosition	    [708.198 302.962 85.344 16]
+    id			    23
+    labelString		    "{ErrorState=1}"
+    labelPosition	    [867.75 246 78.297 16]
     fontSize		    12
     src {
-      id		      16
-      intersection	      [2 1 -0 0 664 351 0 0]
+      id		      17
+      intersection	      [2 0.9623 0.2721 0 837.486 274.9044 0 0]
     }
     dst {
-      id		      17
-      intersection	      [4 -1 0 0 888 351 0 0]
+      id		      19
+      intersection	      [4 -0.9623 -0.2721 0 1146.014 362.1338 0 0]
     }
-    midPoint		    [772 351]
+    midPoint		    [987.9009 317.4309]
+    chart		    2
+    dataLimits		    [837.486 1146.014 274.904 362.267]
+    subviewer		    4
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    91
+    linkNode		    [4 22 24]
+  }
+  transition {
+    id			    24
+    labelString		    "[any(ControlEffortPeak>ControlEffortBoundPeak)]"
+    labelPosition	    [480.958 334.296 266.906 16]
+    fontSize		    12
+    src {
+      intersection	      [0 1 0 0 391.8938 364.0383 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [4 -1 -0 0 821.8938 364.0383 0 0]
+    }
+    midPoint		    [602.8938 364.0383]
     chart		    2
     visible		    0
-    dataLimits		    [664 888 348.6 353.4]
+    dataLimits		    [391.894 821.894 361.638 366.438]
+    subviewer		    4
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    94
+    linkNode		    [4 23 25]
+  }
+  transition {
+    id			    25
+    labelString		    "{ErrorState=2}"
+    labelPosition	    [864.75 324 78.297 16]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [2 1 0 0 835.8938 364.0383 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [4 -1 0 0 1145.75 364.0383 0 0]
+    }
+    midPoint		    [986.8219 364.0383]
+    chart		    2
+    visible		    0
+    dataLimits		    [835.894 1145.75 361.638 366.438]
+    subviewer		    4
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    93
+    linkNode		    [4 24 26]
+  }
+  transition {
+    id			    26
+    labelString		    "{BreakLoopEvt}"
+    labelPosition	    [1222.214 328.859 85.344 16]
+    fontSize		    12
+    src {
+      id		      19
+      intersection	      [2 1 0 0 1159.75 364.0383 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [4 -1 0 0 1404 364.0383 0 0]
+    }
+    midPoint		    [1277.875 364.0383]
+    chart		    2
+    visible		    0
+    dataLimits		    [1159.75 1404 361.638 366.438]
     subviewer		    4
     slide {
       sticky		      BOTH_STICK
     }
     executionOrder	    1
     ssIdNumber		    57
-    linkNode		    [4 18 20]
+    linkNode		    [4 25 27]
   }
   transition {
-    id			    20
-    labelString		    "[any(ControlError>ControlErrorBound)]"
-    labelPosition	    [448.374 434.031 208.188 16]
+    id			    27
+    labelString		    "{ErrorState=3}"
+    labelPosition	    [864.75 405 78.297 16]
     fontSize		    12
     src {
-      intersection	      [0 0.9518 -0.3067 0 328 457 0 0]
+      id		      21
+      intersection	      [2 0.9563 -0.2923 0 835.588 460.9919 0 0]
     }
     dst {
-      id		      16
-      intersection	      [4 -0.9518 0.3067 0 650.3373 353.1467 0 0]
+      id		      19
+      intersection	      [4 -0.9563 0.2923 0 1146.0558 366.0846 0 0]
     }
-    midPoint		    [485.3614 406.3]
+    midPoint		    [986.9967 414.7076]
     chart		    2
     visible		    0
-    dataLimits		    [328 650.337 353.147 457]
+    dataLimits		    [835.588 1146.056 366.085 460.992]
     subviewer		    4
     slide {
       sticky		      BOTH_STICK
     }
-    executionOrder	    2
-    ssIdNumber		    76
-    linkNode		    [4 19 0]
+    executionOrder	    1
+    ssIdNumber		    96
+    linkNode		    [4 26 28]
   }
   transition {
-    id			    21
+    id			    28
+    labelString		    "[any(ControlEffortContinous>ControlEffortBoundContinous)]"
+    labelPosition	    [453.958 435.296 320.219 16]
+    fontSize		    12
+    src {
+      intersection	      [0 1 0 0 391.8938 463.0383 0 0]
+    }
+    dst {
+      id		      21
+      intersection	      [4 -1 -0 0 821.8938 463.0383 0 0]
+    }
+    midPoint		    [602.8938 463.0383]
+    chart		    2
+    visible		    0
+    dataLimits		    [391.894 821.894 460.638 465.438]
+    subviewer		    4
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    3
+    ssIdNumber		    97
+    linkNode		    [4 27 0]
+  }
+  junction {
+    id			    29
+    position		    [982.628 279.537 7]
+    chart		    2
+    subviewer		    3
+    ssIdNumber		    99
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [9 0 0]
+  }
+  transition {
+    id			    30
+    labelString		    "{ErrorState=0}"
+    labelPosition	    [997.628 245.738 78.297 16]
+    fontSize		    12
+    src {
+      id		      29
+      intersection	      [1 0 -1 0 982.628 272.537 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [3 0 1 0.3277 982.628 229.4177 0 0]
+    }
+    midPoint		    [982.628 254.9774]
+    chart		    2
+    dataLimits		    [980.228 985.028 229.418 272.537]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    100
+    linkNode		    [9 0 31]
+  }
+  transition {
+    id			    31
     labelString		    "UI_Home"
     labelPosition	    [665.545 267.037 52.641 16]
     fontSize		    12
@@ -9739,24 +10219,24 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    25
-    linkNode		    [9 0 22]
+    linkNode		    [9 30 32]
   }
   transition {
-    id			    22
+    id			    32
     labelString		    "UI_Reset"
-    labelPosition	    [1052.457 272.743 52.984 16]
+    labelPosition	    [995.54 307.511 52.984 16]
     fontSize		    12
     src {
       id		      5
-      intersection	      [1 0 -1 0.4123 1055.5449 347.9177 0 0]
+      intersection	      [1 0 -1 0.1402 982.628 347.9177 0 0]
     }
     dst {
-      id		      7
-      intersection	      [3 0 1 0.2331 1055.5449 229.4177 0 0]
+      id		      29
+      intersection	      [3 0 1 0 982.628 286.537 0 0]
     }
-    midPoint		    [1055.5449 292.6677]
+    midPoint		    [982.628 321.2274]
     chart		    2
-    dataLimits		    [1053.145 1057.945 229.418 347.918]
+    dataLimits		    [980.228 985.028 286.537 347.918]
     subviewer		    3
     drawStyle		    SMART
     slide {
@@ -9764,10 +10244,10 @@ Stateflow {
     }
     executionOrder	    1
     ssIdNumber		    47
-    linkNode		    [9 21 0]
+    linkNode		    [9 31 0]
   }
   data {
-    id			    23
+    id			    33
     ssIdNumber		    63
     name		    "ControlError"
     scope		    INPUT_DATA
@@ -9789,12 +10269,12 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 0 24]
+    linkNode		    [2 0 34]
   }
   data {
-    id			    24
+    id			    34
     ssIdNumber		    68
-    name		    "ControlEffort"
+    name		    "ControlEffortPeak"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -9814,12 +10294,12 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 23 25]
+    linkNode		    [2 33 35]
   }
   data {
-    id			    25
+    id			    35
     ssIdNumber		    69
-    name		    "cloop"
+    name		    "Cloop"
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -9839,16 +10319,16 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 24 26]
+    linkNode		    [2 34 36]
   }
   data {
-    id			    26
+    id			    36
     ssIdNumber		    80
     name		    "ControlErrorBound"
     scope		    CONSTANT_DATA
     machine		    1
     props {
-      initialValue	      "TUe.Constants.mdl.controlEffortBound"
+      initialValue	      "TUe.Constants.mdl.controlErrorBound"
       array {
 	size			"7"
       }
@@ -9864,16 +10344,16 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [2 25 27]
+    linkNode		    [2 35 37]
   }
   data {
-    id			    27
+    id			    37
     ssIdNumber		    81
-    name		    "ControlEffortBound"
+    name		    "ControlEffortBoundPeak"
     scope		    CONSTANT_DATA
     machine		    1
     props {
-      initialValue	      "TUe.Constants.mdl.controlEffortBound"
+      initialValue	      "TUe.Constants.mdl.controlEffortBoundPeak"
       array {
 	size			"7"
       }
@@ -9889,10 +10369,10 @@ Stateflow {
       }
     }
     dataType		    "double"
-    linkNode		    [2 26 28]
+    linkNode		    [2 36 38]
   }
   data {
-    id			    28
+    id			    38
     ssIdNumber		    82
     name		    "State"
     scope		    OUTPUT_DATA
@@ -9902,6 +10382,80 @@ Stateflow {
 	size			"-1"
       }
       type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "double"
+    linkNode		    [2 37 39]
+  }
+  data {
+    id			    39
+    ssIdNumber		    83
+    name		    "ControlEffortContinous"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 38 40]
+  }
+  data {
+    id			    40
+    ssIdNumber		    85
+    name		    "ControlEffortBoundContinous"
+    scope		    CONSTANT_DATA
+    machine		    1
+    props {
+      initialValue	      "TUe.Constants.mdl.controlEffortBoundContinous"
+      array {
+	size			"7"
+      }
+      type {
+	method			SF_DOUBLE_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "double"
+    linkNode		    [2 39 41]
+  }
+  data {
+    id			    41
+    ssIdNumber		    101
+    name		    "ErrorState"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
 	isSigned		1
@@ -9914,79 +10468,79 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 27 0]
+    linkNode		    [2 40 0]
   }
   event {
-    id			    29
+    id			    42
     ssIdNumber		    70
     name		    "trigger"
     scope		    INPUT_EVENT
     trigger		    EITHER_EDGE_EVENT
     machine		    1
-    linkNode		    [2 0 30]
+    linkNode		    [2 0 43]
   }
   event {
-    id			    30
+    id			    43
     ssIdNumber		    67
     name		    "UI_Reset"
     scope		    INPUT_EVENT
     trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 29 31]
+    linkNode		    [2 42 44]
   }
   event {
-    id			    31
+    id			    44
     ssIdNumber		    66
     name		    "UI_Home"
     scope		    INPUT_EVENT
     trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 30 32]
+    linkNode		    [2 43 45]
   }
   event {
-    id			    32
+    id			    45
     ssIdNumber		    65
     name		    "UI_Stop"
     scope		    INPUT_EVENT
     trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 31 33]
+    linkNode		    [2 44 46]
   }
   event {
-    id			    33
+    id			    46
     ssIdNumber		    64
     name		    "UI_Start"
     scope		    INPUT_EVENT
     trigger		    RISING_EDGE_EVENT
     machine		    1
-    linkNode		    [2 32 34]
+    linkNode		    [2 45 47]
   }
   event {
-    id			    34
+    id			    47
     ssIdNumber		    73
     name		    "BreakLoopEvt"
     scope		    LOCAL_EVENT
     trigger		    FUNCTION_CALL_EVENT
     machine		    1
-    linkNode		    [2 33 0]
+    linkNode		    [2 46 0]
   }
   instance {
-    id			    35
+    id			    48
     machine		    1
     name		    "Logic/Chart"
     chart		    2
   }
   target {
-    id			    36
+    id			    49
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
-    linkNode		    [1 0 37]
+    linkNode		    [1 0 50]
   }
   target {
-    id			    37
+    id			    50
     machine		    1
     name		    "rtw"
-    linkNode		    [1 36 0]
+    linkNode		    [1 49 0]
   }
 }

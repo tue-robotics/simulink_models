@@ -22,7 +22,7 @@ Constants.mdl.CPT_m5 = 500;
 Constants.mdl.CPT_m6 = 512;
 Constants.mdl.CPT_m7 = 512;
 
-Constants.mdl.TUeES030.EncoderCounterSize = 2^32; % Navragen of dit echt een 32bit counter is 
+Constants.mdl.TUeES030.EncoderCounterSize = 2^32;
 
 %% Gearbox Ratio's    maxon * custom gearbox ratio
 Constants.mdl.GR_m1 = (204687/2057)*(60/20);
@@ -60,9 +60,15 @@ Constants.mdl.Motor2JointSpace  = [	0.5,    0.5,    0,      0,      0,      0,  
 Constants.mdl.Joint2MotorSpace  = inv(Constants.mdl.Motor2JointSpace);
 
 %% Stateflow constants
-Constants.mdl.controlErrorBound = [0.01, 	0.01, 	0.01, 	0.01, 	0.01,	0.01,	0.01]; 
-Constants.mdl.controlEffortBound = [10.0, 	10.0, 	10.0, 	10.0, 	10.0,	10.0,	10.0]; 
-
+Constants.mdl.controlErrorBound         = [0.01, 	0.01, 	0.01, 	0.01, 	0.01,	0.01,	0.01]; 
+Constants.mdl.controlEffortBoundPeak    = [20.0, 	20.0, 	20.0, 	20.0, 	20.0,	20.0,	20.0]; % To do real values 
+Constants.mdl.controlEffortBoundContinous = [10.0, 	10.0, 	10.0, 	10.0, 	10.0,	10.0,	10.0]; % To do real values
+Constants.mdl.movAvNrSamplPeak = Constants.general.Fs/200;  % 5 samples for Fs =1000
+Constants.mdl.movAvNrSamplContinous = Constants.general.Fs/10; % 100 samples for Fs =1000.
+% Note that the Peak current safety is there to more quickly cut off the
+% motor when something goes wrong. 5 samples long higher currents are allowed, 
+% However these are limited by the saturation so these higher currents are
+% not actually fed into the motors.
 
 % JointLimitMin 	= [-129,   -5.7, 	0, 		0, 		-12.35,	-129,	-5.7];
 % JointLimitMax 	= [ 195,	178.3, 	182, 	129, 	278.5,  195,	178.3];
